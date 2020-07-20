@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">    
+    <title>Arquivo ROTA</title>
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+        body, body * {
+            font-family: 'Montserrat', sans-serif;
+        }
+        #archive {
+            display: flex;
+            width: 100%;
+            min-height: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: #fbc210;
+        }        
+        #rota2017 { background: url('img/2019.jpeg') no-repeat scroll center center / cover #000 }
+        #rota2018 { background: url('img/2019.jpeg') no-repeat scroll center center / cover #000 }
+        #rota2019 { background: url('img/2019.jpeg') no-repeat scroll center center / cover #000 }
+        .card {
+            display: flex;
+            position: relative;
+            flex: 0 0 33.333333%;
+            height: 50vh;                         
+        }
+        .overlayer {
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            line-height: 100%;
+            text-align: center;
+            background: #000;
+            opacity: 0.7;
+            color: #fff;
+            font-size: 100px;
+            align-items: center;            
+        }
+        .card:hover .overlayer {
+            background: #098ecf;
+            color: #000;
+        }
+        p {
+            width: 100%;
+            text-align: center;
+        }
+        @media only screen and (max-width: 468px) {
+            .card {
+                flex: 0 0 100%;                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="archive">        
+        <a id="rota2017" class="card" href="2017/index.html">
+            <div class="overlayer">
+                <p>2017</p>
+            </div>
+        </a>
+        <a id="rota2018" class="card" href="2018/index.html">
+            <div class="overlayer">
+                <p>2018</p>
+            </div>
+        </a>
+        <a id="rota2019" class="card" href="2019/index.html">
+            <div class="overlayer">
+                <p>2019</p>
+            </div>
+        </a>	            
+    </div>
+</body>
+</html>

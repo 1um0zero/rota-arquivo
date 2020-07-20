@@ -1,0 +1,48 @@
+
+ul.vencedores {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul.vencedores li {
+    width: calc(100% - 30px);
+  }
+  ul.vencedores li:nth-child(odd) {
+    margin: 0 30px 0 0;
+  }
+  ul.vencedores li p {
+    text-align: justify;
+    font-size: 15px;
+  }
+  ul.vencedores li img {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 400px;
+  }
+  ul.vencedores h2 {
+    margin-top: 10px;
+  }
+  ul.vencedores h3 {
+    margin: 0 0 10px;
+    color: #666;
+  }
+  
+  @media (max-width: 1024px){
+    ul.vencedores {
+      margin: 5px;
+    }
+    ul.vencedores h2 {
+      margin: 10px 5px 0 10px;
+    } 
+    ul.vencedores h3 {
+      margin: 2px 0 5px 10px;
+    }
+    ul.vencedores li {
+      width: 100%;
+    }
+    ul.vencedores li:nth-child(odd) {
+      margin: 0;
+    }
+    ul.vencedores li img {
+      width: 100%;
+    }
+  }

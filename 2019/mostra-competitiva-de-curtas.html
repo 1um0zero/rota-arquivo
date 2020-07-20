@@ -12,6 +12,7 @@
     <meta property="og:image:height" content="500">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/core/css/reset.min.css">
+    <link rel="stylesheet" href="static/core/css/common.css">
     <link rel="stylesheet" href="static/core/css/main.min.css?v=2.2">
     <script src="static/core/js/jquery-3.4.1.min.js"></script>
     <script src="static/core/js/jquery.mask.min.js"></script>
@@ -116,53 +117,7 @@
     }
   }
 
-ul.convidados {
-  display: flex;
-  flex-wrap: wrap;
-}
-ul.convidados li {
-  width: calc(100% - 30px);
-}
-ul.convidados li:nth-child(odd) {
-  margin: 0 30px 0 0;
-}
-ul.convidados li p {
-  text-align: justify;
-  font-size: 15px;
-}
-ul.convidados li img {
-  float: left;
-  margin: 0 10px 10px 0;
-  width: 400px;
-}
-ul.convidados h2 {
-  margin-top: 10px;
-}
-ul.convidados h3 {
-  margin: 0 0 10px;
-  color: #666;
-}
 
-@media (max-width: 1024px){
-  ul.convidados {
-    margin: 5px;
-  }
-  ul.convidados h2 {
-    margin: 10px 5px 0 10px;
-  } 
-  ul.convidados h3 {
-    margin: 2px 0 5px 10px;
-  }
-  ul.convidados li {
-    width: 100%;
-  }
-  ul.convidados li:nth-child(odd) {
-    margin: 0;
-  }
-  ul.convidados li img {
-    width: 100%;
-  }
-}
 </style>
 
 
@@ -181,7 +136,7 @@ ul.convidados h3 {
             <h3><strong>Júri Oficial</strong></h3>
             <p>
             
-            <ul class="convidados">  
+            <ul class="vencedores">  
                 <li>
                     <div class="block">
                         <h2><strong>MACACO ALBINO – SISO</strong>, de <strong>Leandro Robles</strong></h2>
@@ -219,7 +174,7 @@ ul.convidados h3 {
             <p>
             <h3><strong>Júri Popular</strong></h3>
            
-            <ul class="convidados">  
+            <ul class="vencedores">  
                 <li>
                     <div class="block">
                         <h2><strong>AMOR</strong>, de <strong>Fernanda Mazzeo</strong></h2>
