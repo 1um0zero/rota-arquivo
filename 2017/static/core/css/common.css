@@ -49,3 +49,16 @@ ul.vencedores {
       width: 100%;
     }
   }
+
+.ano_topo {
+  float:right;
+  margin-top: 30px;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*
+@media screen and (min-width: 480px) {
+  .ano_topo {display:block;}  
+}
+*/
