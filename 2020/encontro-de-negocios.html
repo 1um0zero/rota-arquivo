@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="http://www.rotafestival.com">
+    <meta property="og:title" content="ROTA | Festival de Roteiro Audiovisual">
+    <meta property="og:image" content="static/core/img/logo_2020.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="static/core/css/reset.min.css">
+    <link rel="stylesheet" href="static/core/css/main.min.css?v=2.2">
+    <link rel="stylesheet" href="static/core/css/common.css">
+    <link rel="stylesheet" href="static/core/fontawesome-free-5.15.1-web/css/all.css">
+    
+    <script src="static/core/js/jquery-3.4.1.min.js"></script>
+    <script src="static/core/js/jquery.mask.min.js"></script>
+    <script src="static/core/js/common.js"></script>    
+    <title>ROTA | Festival de Roteiro Audiovisual</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content">
+          <a href="index.html" class="raw">
+             <img src="static/core/img/logo4.png" width="150">
+          </a>
+         
+          <a href="https://www.instagram.com/rotafestival" title="Rota no Instagram" target="_blank" class="btn" style="margin: 12px 40px 0 0; font-size: 200%; background-color:transparent;">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCFH1AJvRUHG2kQPG7ZyR8yQ" title="Rota no YouTube" target="_blank" class="btn" style="margin: 12px 0 0 0; font-size: 200%; background-color:transparent;">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.facebook.com/rotafestival" title="Rota no Facebook" target="_blank" class="btn" style="margin: 12px 0 0 0; font-size: 200%; background-color:transparent;">
+              <i class="fab fa-facebook-square"></i>
+          </a>
+        </div>
+      </header>
+  
+      <div id="mobile-menu" style="display:none"></div>
+
+      <nav>
+        <img src="static/core/img/logo5.png" width="150" id="mobile-menu-logo"
+          style="display:none">
+        <ul>
+          <li class="logo">
+            <a href="index.html">
+                <img src="static/core/img/logo4.png">
+            </a>
+          </li>
+          
+          <li class="">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="">
+            <a href="programacao.html">Programação</a>
+          </li>
+          
+          <li class="">
+            <a href="equipe.html">Equipe</a>
+          </li>
+          
+          <li class="">
+            <a href="concurso-de-roteiros-de-curtas.html">Concurso de Roteiros de Curtas</a>
+          </li>
+          
+          <li class="">
+            <a href="encontro-de-negocios.html">Encontro de Negócios</a>
+          </li>
+          
+          <li class="">
+            <a href="laboratorio-de-projetos-de-serie.html">Laboratório de Projetos de Série</a>
+          </li>
+          
+          <li class="">
+            <a href="mostra-competitiva-de-curtas.html">Mostra Competitiva de Curtas</a>
+          </li>
+          
+          <li class="">
+            <a href="seminario.html">Seminário</a>
+          </li>
+                    
+        </ul>
+      </nav>
+
+      <div id="content">
+        
+        <div id="banner">
+          <div class="banner content">
+            <h1>Encontro de Negócios</h1>
+          </div>
+        </div>
+        
+
+        <div class="content min-height">
+          
+
+<style>
+  .box-payment {
+    border:1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 30px;
+    padding: 20px;
+  }
+  .col-duo.concurso {
+    grid-template-columns: 2fr 1fr;
+  }
+  .clearP p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .small {
+    font-size: 14px;
+  }
+  span.counter {
+    color: #666;
+    font-size: 12px;
+  }
+
+  @media (max-width: 1300px){
+    .col-duo.concurso {
+      grid-template-columns: 3fr 2fr;
+    }
+  }
+
+ul.convidados {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.convidados li {
+  width: calc(50% - 30px);
+}
+ul.convidados li:nth-child(odd) {
+  margin: 0 30px 0 0;
+}
+ul.convidados li p {
+  text-align: justify;
+  font-size: 13px;
+}
+ul.convidados li img {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 250px;
+}
+ul.convidados h2 {
+  margin-top: 10px;
+}
+ul.convidados h3 {
+  margin: 0 0 10px;
+  color: #666;
+}
+
+@media (max-width: 1024px){
+  ul.convidados {
+    margin: 5px;
+  }
+  ul.convidados h2 {
+    margin: 10px 5px 0 10px;
+  } 
+  ul.convidados h3 {
+    margin: 2px 0 5px 10px;
+  }
+  ul.convidados li {
+    width: 100%;
+  }
+  ul.convidados li:nth-child(odd) {
+    margin: 0;
+  }
+  ul.convidados li img {
+    width: 100%;
+  }
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+<input type="hidden" name="csrfmiddlewaretoken" value="aZIBbRd9xupYxW5Fs56vl7FRTuEYhiY7xCisnQvZWCRShE3UKN7zJTW59rpoVuAk">
+<div class="concurso">
+  <div>
+    
+    <div class="contest_image">
+      <div style="width: 100%; height: 400px; background: url(' static/core/img/banner-encontro.jpg ');background-position:bottom"></div>
+    </div>
+    
+
+    <div class="menu_contest">
+      
+      
+        <div class="item_menu_contest">
+          <a href="javascript:regulamento()">Regulamento</a>
+        </div>
+      
+      
+      
+        <div class="item_menu_contest">
+          <a href="javascript:inscricao()">Inscrição</a>
+        </div>
+      
+    </div>
+
+    <div class="c contentDescription">
+      
+
+      <h4>Descrição</h4>
+      <div id="contest_description">
+        <p style="text-align: center;"><em><span style="text-decoration: underline; background-color: #ffffff;">Parab&eacute;ns aos selecionados para o Encontro de Neg&oacute;cios do IV ROTA!<br /></span></em></p>
+<p style="text-align: left;"><span style="background-color: #ffffff;"><strong>S&iacute;ndrome de Um Cora&ccedil;&atilde;o Partido</strong>&nbsp;&nbsp;&nbsp; Livia Maria Cappellari<br /><strong>Dessa pra melhor</strong>&nbsp;&nbsp;&nbsp; Pedro Henrique Cardoso<br /><strong>Abissal&nbsp;</strong>&nbsp;&nbsp; C&eacute;sar Augusto<br /><strong>Pecados Noturnos</strong>&nbsp;&nbsp;&nbsp; C&eacute;sar Augusto<br /><strong>Os Afrofuturistas&nbsp;</strong>&nbsp;&nbsp; MARCELO OLIVEIRA LIMA<br /><strong>Onde est&aacute; Belmonte?&nbsp;</strong>&nbsp;&nbsp; Gualter santos<br /><strong>Rockidsa&nbsp;</strong>&nbsp;&nbsp; Guih Santos<br /><strong>Meu ex &eacute; um cachorro</strong>&nbsp;&nbsp;&nbsp; Ana Guerreiro<br /><strong>Festas Brasileiras</strong>&nbsp;&nbsp;&nbsp; Daniel tumati<br /><strong>Bonfim, o filme&nbsp;&nbsp;</strong>&nbsp; Ana Guerreiro<br /><strong>Dedicat&oacute;rias&nbsp;</strong>&nbsp;&nbsp; Claudio Uchoa<br /><strong>24.37&nbsp;&nbsp;</strong>&nbsp; Fernanda Vieira<br /><strong>ODU&nbsp;&nbsp;</strong>&nbsp; Hemily Mour&atilde;o<br /><strong>O Amante&nbsp;&nbsp;</strong>&nbsp; ELISANGELA RAMOS<br /><strong>Camisa 24</strong>&nbsp;&nbsp;&nbsp; Vin&iacute;cius Tirapani<br /><strong>O Pre&ccedil;o de uma Vida&nbsp;</strong>&nbsp;&nbsp; Natan Bandeira<br /><strong>Chez Patrick&nbsp;&nbsp;&nbsp;</strong> Fernanda Beck<br /><strong>Clausura</strong>&nbsp;&nbsp;&nbsp; Maria Eugenia Portolano<br /><strong>Marcos e Arnaldo</strong>&nbsp;&nbsp; Nat&aacute;lia Brandino<br /><strong>Ser em Ti&nbsp;&nbsp;</strong>&nbsp; Roberto Sim&atilde;o Pereira Junior<br /><strong>Squirt&nbsp;&nbsp;</strong>&nbsp; Fernanda Magalh&atilde;es<br /><strong>Caso Contr&aacute;rio</strong>&nbsp;&nbsp;&nbsp; Eduardo Santos Rodrigues<br /><strong>EU QUERO IR EMBORA&nbsp;</strong>&nbsp;&nbsp; WOLNEY HON&Oacute;RIO FILHO<br /><strong>Tem um filme aqui&nbsp;&nbsp;</strong>&nbsp; C&iacute;ntia Lima<br /><strong>7 PARTES DE 8&nbsp;</strong>&nbsp;&nbsp; Fernando Serravalle<br /><strong>Olhos de Sapo&nbsp;&nbsp;</strong>&nbsp; Thiago Costa<br /><strong>Todas as fam&iacute;lias&nbsp;&nbsp;</strong>&nbsp; Guilherme Avzaradel<br /><strong>Batalha das agulhas&nbsp;</strong>&nbsp;&nbsp; Rafael Gazola Brand&atilde;o<br /><strong>Quartas-Feiras&nbsp;</strong>&nbsp;&nbsp; Pedro Dalo<br /><strong>As Folhas de Sonho no Jardim do Solar&nbsp;&nbsp;</strong>&nbsp; Henrique Freitas<br /><strong>SQN 402&nbsp;</strong>&nbsp;&nbsp; Juliana Benetti Victorio<br /><strong>Uma BEER com meu BROW&nbsp;</strong>&nbsp;&nbsp; Celso Eduardo Leite Vecchi<br /><strong>O Vale dos&nbsp;</strong>&nbsp;&nbsp; Eric Bitencourt<br /><strong>QUEM SOMOS N&Oacute;S?&nbsp;</strong>&nbsp;&nbsp; Nat&aacute;lia Cristina de Oliveira C<br /><strong>Mem&oacute;ria Profunda&nbsp;&nbsp;</strong>&nbsp; Camilla G.B Amaral<br /><strong>Direto da Reda&ccedil;&atilde;o&nbsp;</strong>&nbsp;&nbsp; Jorge Rodrigues<br /><strong>LAS DEMITIDAS!&nbsp;&nbsp;&nbsp;</strong> Rodrigo de M. Augusto<br /><strong>NAVES&nbsp;&nbsp;&nbsp;</strong> JOSE LUIZ TORRES VIDAL<br /><strong>O&aacute;sis</strong>&nbsp;&nbsp;&nbsp; Renato Sircilli<br /><strong>Insanat&oacute;rio&nbsp;&nbsp;&nbsp;</strong> Bruno Saggese<br /><strong>Ningu&eacute;m Pode Provar Nada&nbsp;</strong>&nbsp;&nbsp; Rodrigo Pinto<br /><strong>O AQU&Aacute;RIO</strong>&nbsp;&nbsp;&nbsp; Fabio Yamada<br /><strong>Vets&nbsp;</strong>&nbsp;&nbsp; Marcus Achiles<br /><strong>Par&ccedil;a&nbsp;&nbsp;</strong>&nbsp; Cau&ecirc; Felipe Shimoda<br /><strong>Inconscientes&nbsp;</strong>&nbsp;&nbsp; DANIEL ALMEIDA MARTINS<br /><strong>INVENT&Aacute;RIO&nbsp;</strong>&nbsp;&nbsp; Alessandra Marchi Carrasco<br /><strong>BOLA FORA&nbsp;</strong>&nbsp;&nbsp; JOSE LUIZ TORRES VIDAL<br /><strong>Amazona&nbsp;&nbsp;&nbsp;</strong> Joao Ig<br /><strong>Grupo de risco&nbsp;</strong>&nbsp;&nbsp; Ana Squilanti<br /><strong>ESQUADR&Atilde;O CONTRA MONSTROS DOM&Eacute;STICOS&nbsp;</strong>&nbsp;&nbsp; Dario Pato<br /><strong>Viagem pelo Brasil&nbsp;&nbsp;</strong>&nbsp; Rafael Bz<br /><strong>O QUE MANT&Eacute;M O HOMEM VIVO&nbsp;&nbsp;&nbsp;</strong> Andr&eacute; Barros<br /><strong>Inspira&ccedil;&atilde;o&nbsp;</strong>&nbsp;&nbsp; Bruno Marques Dias<br /><strong>Kukpin - amor pela floresta</strong>&nbsp;&nbsp;&nbsp; Bruno Marques Dias<br /><strong>AU PAIR - A VIDA DAS INTERCAMBISTAS&nbsp;</strong>&nbsp;&nbsp; Juliana Souza<br /><strong>CINCO REINOS&nbsp;</strong>&nbsp;&nbsp; Rodrigo de M. Augusto<br /><strong>MARCELA&nbsp;</strong>&nbsp;&nbsp; Gabriela Neves<br /><strong>O Gigante da Colina -&nbsp; A Hist&oacute;ria dos Camisas Negras</strong>&nbsp;&nbsp;&nbsp; Karlo Oliveira<br /><strong>Louise&nbsp;</strong>&nbsp;&nbsp; Soraya Helena<br /><strong>O Som do Sil&ecirc;ncio&nbsp;</strong>&nbsp;&nbsp; Lara Freitas de Carvalho<br /><strong>Ocultos&nbsp;</strong>&nbsp;&nbsp; Igor Fonseca da Silva<br /><strong>A CAMISA MAIS VALIOSA DO MUNDO&nbsp;&nbsp;</strong>&nbsp; FILIPE DOMIANO<br /><strong>Revoada&nbsp;&nbsp;</strong>&nbsp; Breno Ribeiro<br /><strong>Diana&nbsp;</strong>&nbsp;&nbsp; Sophia Carregal<br /><strong>Divina&nbsp;</strong>&nbsp;&nbsp; Vitor Gilard<br /><strong>Kanpai!&nbsp;</strong>&nbsp;&nbsp; Cintia Nakashima<br /><strong>A Lenda&nbsp;</strong>&nbsp;&nbsp; Andr&eacute; dos Passos Pacano<br /><strong>Nessas Horas&nbsp;</strong>&nbsp;&nbsp; Tha&iacute;s Mandarino<br /><strong>Lado B&nbsp;</strong>&nbsp;&nbsp; Roberta S. Saboya<br /><strong>Jurisdi&ccedil;&atilde;o&nbsp;</strong>&nbsp;&nbsp; JOSE LUIZ TORRES VIDAL<br /><strong>NO SIGILO&nbsp;</strong>&nbsp;&nbsp; Alexandre D'Lou<br /><strong>V&ocirc; Serafim (Longa de anima&ccedil;&atilde;o infantil)&nbsp;</strong>&nbsp;&nbsp; Luana Laux<br /><strong>Raz&atilde;o&nbsp;&nbsp;&nbsp;</strong> Roberta Miller</span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><em><span style="text-decoration: underline; background-color: #ffffff;">LEIA TODO O REGULAMENTO ANTES DE ENVIAR A SUA INSCRI&Ccedil;&Atilde;O.</span></em></p>
+<p>&nbsp;</p>
+<p>O <strong>Encontro de Neg&oacute;cios,</strong> que acontecer&aacute; no dia&nbsp;<strong>27 de novembro de 2020 de 9h &agrave;s 18h, </strong>tem o objetivo de promover o encontro dos roteiristas com produtoras, distribuidoras e programadoras de televis&atilde;o. Roteiristas inscrevem projetos audiovisuais de qualquer formato, g&ecirc;nero e dura&ccedil;&atilde;o, e o ROTA faz a ponte com as empresas, marcando reuni&otilde;es de 20 minutos, de acordo com o interesse das empresas nos projetos inscritos.</p>
+<p><strong>As inscri&ccedil;&otilde;es ficam abertas de<span style="background-color: #ffffff;"> 00h00 de 03 de agosto at&eacute; as 23:59h de 25 de outubro de 2020</span></strong><span style="background-color: #ffffff;"> e</span> est&atilde;o sujeitas &agrave; compra<span style="background-color: #ffffff;"> de ingressos atrav&eacute;s de&nbsp;<strong>Inscri&ccedil;&atilde;o Avulsa </strong>ou de um<strong> Combo</strong> [para quem tem 3 (tr&ecirc;s) projetos para o Encontro de Neg&oacute;cios e/ou para o Laborat&oacute;rio de Projetos de S&eacute;ries].&nbsp;&nbsp;</span></p>
+<p><span style="background-color: #ffffff;">- <strong>Combo</strong> - o inscrito&nbsp;tem direito a inserir at&eacute;<strong> 3 (tr&ecirc;s) projetos para concorrer ao Encontro de Neg&oacute;cios</strong> e/ou ao<strong>&nbsp;Laborat&oacute;rio de Projetos de S&eacute;rie</strong>. Valor = R$ 140,00 (cento e quarenta reais).</span></p>
+<p>- <strong>Inscri&ccedil;&atilde;o avulsa no Encontro</strong> -<span style="background-color: #ffffff;"> R$50,00 (cinquenta reais) p</span>or projeto.</p>
+<p>-&nbsp;<span style="background-color: #ffffff;"><strong>Inscri&ccedil;&atilde;o avulsa no Laborat&oacute;rio -</strong> R$70,00 (setenta reais) por projeto.</span></p>
+<p>D&uacute;vidas e sugest&otilde;es? Envie um email para <strong>rotaencontro2020@gmail.com</strong></p>      
+      </div>
+
+      
+
+              
+        <h4 id="h4_regulamento" name="h4_regulamento">Regulamento</h4>
+        <div id="regulation">
+          <div>
+            <p dir="ltr"><strong>1.OBJETIVO</strong></p>
+<p>&nbsp;</p>
+<p dir="ltr"><strong>1.1</strong> O objetivo do <strong>Encontro de Neg&oacute;cios do IV ROTA - Festival de Roteiro Audiovisual</strong> consiste em reunir <strong>roteiristas ou respons&aacute;veis por projetos de roteiro</strong> e <strong>empresas</strong> que estejam em busca de novos projetos audiovisuais nos quais investir, como <strong>produtoras, distribuidoras e players</strong> (canais abertos, canais fechados e plataformas de streaming), fomentando as oportunidades de roteiristas, em especial iniciantes, terem suas obras produzidas.&nbsp;</p>
+<p dir="ltr">&nbsp;&nbsp;</p>
+<p dir="ltr"><strong>2. DATA E LOCAL</strong></p>
+<p>&nbsp;</p>
+<p dir="ltr"><strong>2.1</strong>&nbsp;O&nbsp;<strong>IV ROTA - Festival de Roteiro Audiovisual</strong>&nbsp;acontecer&aacute; <strong>de 25 a 29 de novembro de 2020</strong>, em vers&atilde;o on line, com as atividades apresentadas nas redes sociais e em plataformas de meeting.</p>
+<p dir="ltr">O Encontro de Neg&oacute;cios ocorrer&aacute; exclusivamente no dia <strong>27 de novembro de 2020</strong>, entre <strong>9h e 18h</strong>.</p>
+<p><br /><br /></p>
+<p dir="ltr"><strong>3. INSCRI&Ccedil;&Otilde;ES</strong></p>
+<p>&nbsp;</p>
+<p dir="ltr"><strong>3.1</strong> A inscri&ccedil;&atilde;o para o <strong>Encontro de Neg&oacute;cios do IV ROTA - Festival de Roteiro Audiovisual</strong>, feita mediante pagamento, estar&aacute; aberta <strong>a partir das 00h0<span style="background-color: #ffffff;">0 de 03 de agosto de 2020 at&eacute; as 23h59 de 25 de outubro de 2020, hor&aacute;rio de Bras&iacute;lia</span></strong><span style="background-color: #ffffff;">.</span></p>
+<p dir="ltr"><strong>3.2 </strong>A inscri&ccedil;&atilde;o no Encontro de Neg&oacute;cios do IV ROTA - Festival de Roteiro Audiovisual poder&aacute; ser feita <span style="background-color: #ffffff;">atrav&eacute;s da compra de <strong>Inscri&ccedil;&atilde;o Avulsa</strong> ou de um <strong>Combo</strong> [para quem tem 3 (tr&ecirc;s) projetos para o Encontro de Neg&oacute;cios e/ou para o Laborat&oacute;rio de Projetos de S&eacute;ries].&nbsp;</span></p>
+<p dir="ltr"><strong>3.3&nbsp;</strong>Cada&nbsp;<strong>Inscri&ccedil;&atilde;o avulsa</strong>&nbsp;do IV ROTA - Festival de Roteiro Audiovisual dar&aacute; direito &agrave; inscri&ccedil;&atilde;o de 1 (um) projeto no Encontro ou 1 (um) projeto no Laborat&oacute;rio de Projetos de S&eacute;ries.</p>
+<p dir="ltr"><strong>3.4</strong> O&nbsp;<strong>Combo</strong> do IV ROTA - Festival de Roteiro Audiovisual d&aacute; direito &agrave; inscri&ccedil;&atilde;o de&nbsp;<span style="background-color: #ffffff;">para quem tem 3 (tr&ecirc;s) projetos para o Encontro de Neg&oacute;cios e/ou para o Laborat&oacute;rio de Projetos de S&eacute;ries</span>.</p>
+<p dir="ltr"><strong>3.5</strong> N&atilde;o h&aacute; limite de n&uacute;mero de projetos inscritos no <strong>Encontro de Neg&oacute;cios do IV ROTA - Festival de Roteiro Audiovisual</strong>.</p>
+<p dir="ltr"><strong>3.6</strong> Cada proponente poder&aacute; inscrever seu projeto como <strong>pessoa f&iacute;sica ou pessoa jur&iacute;dica</strong>.</p>
+<p dir="ltr"><strong>3.7</strong> Os projetos inscritos poder&atilde;o ser de <strong>fic&ccedil;&atilde;o</strong> ou <strong>n&atilde;o fic&ccedil;&atilde;o</strong>, <strong>obras seriadas ou n&atilde;o e em qualquer</strong> <strong>formato</strong>, o qual dever&aacute; ser informado em campo indicado no formul&aacute;rio de inscri&ccedil;&atilde;o.</p>
+<p dir="ltr"><strong>3.8</strong>&nbsp; &nbsp;Todo projeto dever&aacute; apresentar:</p>
+<p dir="ltr">1)&nbsp; <strong>Logline</strong> &ndash; o projeto em uma frase, em campo indicado no formul&aacute;rio de inscri&ccedil;&atilde;o.&nbsp;</p>
+<p dir="ltr">2) <strong>Sinopse</strong></p>
+<p dir="ltr">3) <strong>Argumento</strong></p>
+<p dir="ltr">4)&nbsp;<strong>Perfil dos personagens principais</strong></p>
+<p dir="ltr">5) <strong>P&uacute;blico alvo</strong></p>
+<p dir="ltr">6) <strong>Biografia do criador</strong></p>
+<p dir="ltr">7)&nbsp;<strong>Informa&ccedil;&otilde;es relevantes adicionais</strong></p>
+<p dir="ltr"><strong>3.9</strong>&nbsp; &nbsp;Apenas ser&atilde;o aceitas as inscri&ccedil;&otilde;es de proje<span style="background-color: #ffffff;">tos <strong>registrados</strong>.</span></p>
+<p dir="ltr"><span style="background-color: #ffffff;"><strong>ATEN&Ccedil;&Atilde;O:</strong> em decorr&ecirc;ncia da quarentena o <strong>Escrit&oacute;rio de Direitos Autorais da Biblioteca Nacional</strong> at&eacute; o lan&ccedil;amento deste regulamento est&aacute; com as portas fechadas. Para aqueles que ainda n&atilde;o registraram seus projetos, sugerimos que providencie registro em outra institui&ccedil;&atilde;o, como por exemplo o <a style="background-color: #ffffff;" href="www.registrodeobras.com" target="_blank" rel="noopener">www.registrodeobras.com</a>. Ser&aacute; aceito o <strong>protocolo de inscri&ccedil;&atilde;o</strong> do registro, caso n&atilde;o tenha sido ainda efetivado. Um ou outro (registro de inscri&ccedil;&atilde;o ou protocolo) dever&aacute; ser anexado em campo indicado no formul&aacute;rio de inscri&ccedil;&atilde;o.&nbsp;</span></p>
+<p>&nbsp;</p>
+<p dir="ltr"><strong>4-&nbsp; DISPOSI&Ccedil;&Otilde;ES GERAIS&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</strong> &nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p dir="ltr">&nbsp;<strong>4.1</strong>&nbsp; &nbsp; &nbsp; Os projetos inscritos ser&atilde;o disponibilizados &agrave;s <strong>empresas (produtoras, distribuidoras e players, canais de TV e plataformas de streaming) participantes</strong> do <strong>Encontro de Neg&oacute;cios do IV ROTA - Festival de Roteiro Audiovisual</strong> e por eles ser&atilde;o avaliados, podendo ou n&atilde;o cada projeto ser selecionado para a reuni&atilde;o no dia 27 de novemb<span style="background-color: #ffffff;">ro de 2020.</span></p>
+<p dir="ltr"><span style="background-color: #ffffff;"><strong>4.2</strong> &nbsp; Cada reuni&atilde;o ter&aacute; dura&ccedil;&atilde;o de at&eacute; <strong>20 minutos </strong>em uma plataforma de meeting a ser informada aos selecionados, com data e hor&aacute;rio pr&eacute; agendados.</span></p>
+<p dir="ltr"><strong>4.3</strong> O hor&aacute;rio de cada reuni&atilde;o do <strong>Encontro de Neg&oacute;cios do IV ROTA- Festival de Roteiro Audiovisual</strong> ser&aacute; agendado pela organiza&ccedil;&atilde;o do IV ROTA, de acordo com a disponibilidade dos empres&aacute;rios participantes, e os inscritos cujos projetos forem escolhidos ser&atilde;o imediatamente comunicados sobre o agendamento, n&atilde;o cabendo nenhuma exig&ecirc;ncia de modifica&ccedil;&atilde;o de hor&aacute;rio por parte destes.</p>
+<p dir="ltr"><strong>4.4</strong> As decis&otilde;es acerca da sele&ccedil;&atilde;o dos projetos para as reuni&otilde;es s&atilde;o soberanas e irrecorr&iacute;veis, sendo de <strong>inteira responsabilidade</strong> dos <strong>empres&aacute;rios&nbsp; participantes</strong> do <strong>Encontro de Neg&oacute;cios do IV ROTA- Festival de Roteiro Audiovisual</strong>.</p>
+<p dir="ltr"><strong>4.5</strong>&nbsp; N&atilde;o h&aacute; qualquer garantia de fechamento de neg&oacute;cio em decorr&ecirc;ncia do <strong>Encontro de Neg&oacute;cios do IV ROTA- Festival de Roteiro Audiovisual</strong>.&nbsp;</p>
+<p dir="ltr"><strong>4.6</strong> &nbsp; Caso um projeto inscrito no <strong>Encontro de Neg&oacute;cios do IV ROTA- Festival de Roteiro Audiovisual</strong> n&atilde;o seja escolhido por nenhum empres&aacute;rio participante, <strong>n&atilde;o haver&aacute; devolu&ccedil;&atilde;o do valor</strong> cobrado pela inscri&ccedil;&atilde;o.</p>
+<p dir="ltr"><strong>4.7</strong> &nbsp; O ROTA n&atilde;o se responsabiliza por quaisquer decorr&ecirc;ncias das reuni&otilde;es promovidas pelo <strong>Encontro de Neg&oacute;cios do IV ROTA- Festival de Roteiro Audiovisual</strong>, escusando-se, pois, de quaisquer obriga&ccedil;&otilde;es, deveres, responsabilidades e demandas judiciais ou extrajudiciais que porventura venham a surgir em&nbsp; decorr&ecirc;ncia da inscri&ccedil;&atilde;o de quaisquer projetos neste evento.<br /><br /></p>
+<p class="Default"><strong>5. CONTATOS</strong></p>
+<p class="Default"><strong>5.1&nbsp;</strong>D&uacute;vidas decorrentes do presente regulamento dever&atilde;o ser encaminhadas ao e-mail:&nbsp;<a href="mailto:rotalab2019@gmail.com">rotaencontro2020@gmail.com</a></p>
+<p class="MsoNormal"><strong>5.2&nbsp;</strong>Para acompanhar as not&iacute;cias do&nbsp;<strong>IV ROTA</strong>&nbsp;acesse:</p>
+<p>Facebook:&nbsp;&nbsp;<a title="https://www.facebook.com/rotafestival/" href="https://www.facebook.com/rotafestival/" target="_blank" rel="noopener">https://www.facebook.com/rotafestival/</a>&nbsp;<br />Site:&nbsp;&nbsp;<a title="www.rotafestival.com" href="http://www.rotafestival.com" target="_blank" rel="noopener">http://rotafestival.com</a>&nbsp;<br />Instagram:&nbsp;&nbsp;<a title="https://www.instagram.com/rotafestival/" href="https://www.instagram.com/rotafestival/" target="_blank" rel="noopener">@rotafestival</a>&nbsp;<br />Twitter:&nbsp;<a title="@rotafestival" href="https://twitter.com/rotafestival" target="_blank" rel="noopener">@rotafestival</a></p>
+          </div>
+          <div class="showRegulation">
+            Ver mais...
+          </div>
+          <div class="hideRegulation">Fechar</div>
+        </div>
+        <div class="fade"></div>
+      
+
+      
+        <h4 id="h4_inscricao">Inscrição</h4>
+      
+
+      
+        <div style="font-size:18px;text-align:center">
+          
+            
+            Inscrições abertas de 03 de agosto a 25 de outubro de 2020!
+          
+        </div>
+
+      
+
+    </div>
+
+  </div>
+
+  <div>
+    <div class="box-payment" style="display: none;">
+      <strong>Regulamento</strong>
+      <div class="regulation clearP small">
+        <p dir="ltr"><strong>1.OBJETIVO</strong></p>
+<p>&nbsp;</p>
+<p dir="ltr"><strong>1.1</strong> O objetivo do <strong>Encontro de Neg&oacute;cios do IV ROTA - Festival de Roteiro Audiovisual</strong> consiste em reunir <strong>roteiristas ou respons&aacute;veis por projetos de roteiro</strong> e <strong>empresas</strong> que estejam em busca de novos projetos audiovisuais nos quais investir, como <strong>produtoras, distribuidoras e players</strong> (canais abertos, canais fechados e plataformas de streaming), fomentando as oportunidades de roteiristas, em especial iniciantes, terem suas obras produzidas.&nbsp;</p>
+<p dir="ltr">&nbsp;&nbsp;</p>
+<p dir="ltr"><strong>2. DATA E LOCAL</strong></p>
+<p>&nbsp;</p>
+<p dir="ltr"><strong>2.1</strong>&nbsp;O&nbsp;<strong>IV ROTA - Festival de Roteiro Audiovisual</strong>&nbsp;acontecer&aacute; <strong>de 25 a 29 de novembro de 2020</strong>, em vers&atilde;o on line, com as atividades apresentadas nas redes sociais e em plataformas de meeting.</p>
+<p dir="ltr">O Encontro de Neg&oacute;cios ocorrer&aacute; exclusivamente no dia <strong>27 de novembro de 2020</strong>, entre <strong>9h e 18h</strong>.</p>
+<p><br /><br /></p>
+<p dir="ltr"><strong>3. INSCRI&Ccedil;&Otilde;ES</strong></p>
+<p>&nbsp;</p>
+<p dir="ltr"><strong>3.1</strong> A inscri&ccedil;&atilde;o para o <strong>Encontro de Neg&oacute;cios do IV ROTA - Festival de Roteiro Audiovisual</strong>, feita mediante pagamento, estar&aacute; aberta <strong>a partir das 00h0<span style="background-color: #ffffff;">0 de 03 de agosto de 2020 at&eacute; as 23h59 de 25 de outubro de 2020, hor&aacute;rio de Bras&iacute;lia</span></strong><span style="background-color: #ffffff;">.</span></p>
+<p dir="ltr"><strong>3.2 </strong>A inscri&ccedil;&atilde;o no Encontro de Neg&oacute;cios do IV ROTA - Festival de Roteiro Audiovisual poder&aacute; ser feita <span style="background-color: #ffffff;">atrav&eacute;s da compra de <strong>Inscri&ccedil;&atilde;o Avulsa</strong> ou de um <strong>Combo</strong> [para quem tem 3 (tr&ecirc;s) projetos para o Encontro de Neg&oacute;cios e/ou para o Laborat&oacute;rio de Projetos de S&eacute;ries].&nbsp;</span></p>
+<p dir="ltr"><strong>3.3&nbsp;</strong>Cada&nbsp;<strong>Inscri&ccedil;&atilde;o avulsa</strong>&nbsp;do IV ROTA - Festival de Roteiro Audiovisual dar&aacute; direito &agrave; inscri&ccedil;&atilde;o de 1 (um) projeto no Encontro ou 1 (um) projeto no Laborat&oacute;rio de Projetos de S&eacute;ries.</p>
+<p dir="ltr"><strong>3.4</strong> O&nbsp;<strong>Combo</strong> do IV ROTA - Festival de Roteiro Audiovisual d&aacute; direito &agrave; inscri&ccedil;&atilde;o de&nbsp;<span style="background-color: #ffffff;">para quem tem 3 (tr&ecirc;s) projetos para o Encontro de Neg&oacute;cios e/ou para o Laborat&oacute;rio de Projetos de S&eacute;ries</span>.</p>
+<p dir="ltr"><strong>3.5</strong> N&atilde;o h&aacute; limite de n&uacute;mero de projetos inscritos no <strong>Encontro de Neg&oacute;cios do IV ROTA - Festival de Roteiro Audiovisual</strong>.</p>
+<p dir="ltr"><strong>3.6</strong> Cada proponente poder&aacute; inscrever seu projeto como <strong>pessoa f&iacute;sica ou pessoa jur&iacute;dica</strong>.</p>
+<p dir="ltr"><strong>3.7</strong> Os projetos inscritos poder&atilde;o ser de <strong>fic&ccedil;&atilde;o</strong> ou <strong>n&atilde;o fic&ccedil;&atilde;o</strong>, <strong>obras seriadas ou n&atilde;o e em qualquer</strong> <strong>formato</strong>, o qual dever&aacute; ser informado em campo indicado no formul&aacute;rio de inscri&ccedil;&atilde;o.</p>
+<p dir="ltr"><strong>3.8</strong>&nbsp; &nbsp;Todo projeto dever&aacute; apresentar:</p>
+<p dir="ltr">1)&nbsp; <strong>Logline</strong> &ndash; o projeto em uma frase, em campo indicado no formul&aacute;rio de inscri&ccedil;&atilde;o.&nbsp;</p>
+<p dir="ltr">2) <strong>Sinopse</strong></p>
+<p dir="ltr">3) <strong>Argumento</strong></p>
+<p dir="ltr">4)&nbsp;<strong>Perfil dos personagens principais</strong></p>
+<p dir="ltr">5) <strong>P&uacute;blico alvo</strong></p>
+<p dir="ltr">6) <strong>Biografia do criador</strong></p>
+<p dir="ltr">7)&nbsp;<strong>Informa&ccedil;&otilde;es relevantes adicionais</strong></p>
+<p dir="ltr"><strong>3.9</strong>&nbsp; &nbsp;Apenas ser&atilde;o aceitas as inscri&ccedil;&otilde;es de proje<span style="background-color: #ffffff;">tos <strong>registrados</strong>.</span></p>
+<p dir="ltr"><span style="background-color: #ffffff;"><strong>ATEN&Ccedil;&Atilde;O:</strong> em decorr&ecirc;ncia da quarentena o <strong>Escrit&oacute;rio de Direitos Autorais da Biblioteca Nacional</strong> at&eacute; o lan&ccedil;amento deste regulamento est&aacute; com as portas fechadas. Para aqueles que ainda n&atilde;o registraram seus projetos, sugerimos que providencie registro em outra institui&ccedil;&atilde;o, como por exemplo o <a style="background-color: #ffffff;" href="www.registrodeobras.com" target="_blank" rel="noopener">www.registrodeobras.com</a>. Ser&aacute; aceito o <strong>protocolo de inscri&ccedil;&atilde;o</strong> do registro, caso n&atilde;o tenha sido ainda efetivado. Um ou outro (registro de inscri&ccedil;&atilde;o ou protocolo) dever&aacute; ser anexado em campo indicado no formul&aacute;rio de inscri&ccedil;&atilde;o.&nbsp;</span></p>
+<p>&nbsp;</p>
+<p dir="ltr"><strong>4-&nbsp; DISPOSI&Ccedil;&Otilde;ES GERAIS&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</strong> &nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p dir="ltr">&nbsp;<strong>4.1</strong>&nbsp; &nbsp; &nbsp; Os projetos inscritos ser&atilde;o disponibilizados &agrave;s <strong>empresas (produtoras, distribuidoras e players, canais de TV e plataformas de streaming) participantes</strong> do <strong>Encontro de Neg&oacute;cios do IV ROTA - Festival de Roteiro Audiovisual</strong> e por eles ser&atilde;o avaliados, podendo ou n&atilde;o cada projeto ser selecionado para a reuni&atilde;o no dia 27 de novemb<span style="background-color: #ffffff;">ro de 2020.</span></p>
+<p dir="ltr"><span style="background-color: #ffffff;"><strong>4.2</strong> &nbsp; Cada reuni&atilde;o ter&aacute; dura&ccedil;&atilde;o de at&eacute; <strong>20 minutos </strong>em uma plataforma de meeting a ser informada aos selecionados, com data e hor&aacute;rio pr&eacute; agendados.</span></p>
+<p dir="ltr"><strong>4.3</strong> O hor&aacute;rio de cada reuni&atilde;o do <strong>Encontro de Neg&oacute;cios do IV ROTA- Festival de Roteiro Audiovisual</strong> ser&aacute; agendado pela organiza&ccedil;&atilde;o do IV ROTA, de acordo com a disponibilidade dos empres&aacute;rios participantes, e os inscritos cujos projetos forem escolhidos ser&atilde;o imediatamente comunicados sobre o agendamento, n&atilde;o cabendo nenhuma exig&ecirc;ncia de modifica&ccedil;&atilde;o de hor&aacute;rio por parte destes.</p>
+<p dir="ltr"><strong>4.4</strong> As decis&otilde;es acerca da sele&ccedil;&atilde;o dos projetos para as reuni&otilde;es s&atilde;o soberanas e irrecorr&iacute;veis, sendo de <strong>inteira responsabilidade</strong> dos <strong>empres&aacute;rios&nbsp; participantes</strong> do <strong>Encontro de Neg&oacute;cios do IV ROTA- Festival de Roteiro Audiovisual</strong>.</p>
+<p dir="ltr"><strong>4.5</strong>&nbsp; N&atilde;o h&aacute; qualquer garantia de fechamento de neg&oacute;cio em decorr&ecirc;ncia do <strong>Encontro de Neg&oacute;cios do IV ROTA- Festival de Roteiro Audiovisual</strong>.&nbsp;</p>
+<p dir="ltr"><strong>4.6</strong> &nbsp; Caso um projeto inscrito no <strong>Encontro de Neg&oacute;cios do IV ROTA- Festival de Roteiro Audiovisual</strong> n&atilde;o seja escolhido por nenhum empres&aacute;rio participante, <strong>n&atilde;o haver&aacute; devolu&ccedil;&atilde;o do valor</strong> cobrado pela inscri&ccedil;&atilde;o.</p>
+<p dir="ltr"><strong>4.7</strong> &nbsp; O ROTA n&atilde;o se responsabiliza por quaisquer decorr&ecirc;ncias das reuni&otilde;es promovidas pelo <strong>Encontro de Neg&oacute;cios do IV ROTA- Festival de Roteiro Audiovisual</strong>, escusando-se, pois, de quaisquer obriga&ccedil;&otilde;es, deveres, responsabilidades e demandas judiciais ou extrajudiciais que porventura venham a surgir em&nbsp; decorr&ecirc;ncia da inscri&ccedil;&atilde;o de quaisquer projetos neste evento.<br /><br /></p>
+<p class="Default"><strong>5. CONTATOS</strong></p>
+<p class="Default"><strong>5.1&nbsp;</strong>D&uacute;vidas decorrentes do presente regulamento dever&atilde;o ser encaminhadas ao e-mail:&nbsp;<a href="mailto:rotalab2019@gmail.com">rotaencontro2020@gmail.com</a></p>
+<p class="MsoNormal"><strong>5.2&nbsp;</strong>Para acompanhar as not&iacute;cias do&nbsp;<strong>IV ROTA</strong>&nbsp;acesse:</p>
+<p>Facebook:&nbsp;&nbsp;<a title="https://www.facebook.com/rotafestival/" href="https://www.facebook.com/rotafestival/" target="_blank" rel="noopener">https://www.facebook.com/rotafestival/</a>&nbsp;<br />Site:&nbsp;&nbsp;<a title="www.rotafestival.com" href="http://www.rotafestival.com" target="_blank" rel="noopener">http://rotafestival.com</a>&nbsp;<br />Instagram:&nbsp;&nbsp;<a title="https://www.instagram.com/rotafestival/" href="https://www.instagram.com/rotafestival/" target="_blank" rel="noopener">@rotafestival</a>&nbsp;<br />Twitter:&nbsp;<a title="@rotafestival" href="https://twitter.com/rotafestival" target="_blank" rel="noopener">@rotafestival</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  window.formSent = false;
+  $(document).ready(function(){
+    
+    
+
+    $('#subscription_form').submit(function(){
+      if (!window.formSent){
+        let submit = $(this).find('input[type=submit]');
+        submit[0].disabled = true;
+        window.formSent = true;
+        submit.attr('class', 'btn grey');
+        submit.val('Aguarde, enviando...');
+      }
+    });
+
+    $('.regulation > a').click(function(){
+      if ($(this).hasClass('visible')){
+        $(this).removeClass('visible');
+        $(this).text('ver regulamento');
+        $('.regulation .text').hide();
+      } else {
+        $(this).addClass('visible');
+        $(this).text('esconder regulamento');
+        $('.regulation .text').show();
+      }
+    });
+
+    $(".showRegulation").click( function () {
+      $(".hideRegulation").show();
+      $(this).hide().parent().css({
+        height: "auto"
+      });
+    });
+
+    $(".hideRegulation").click( function () {
+      $(".showRegulation").show();
+      $(this).hide().parent().css({
+        height: "390px"
+      });
+    });
+
+    $('.charCounter').each(function(n, el){
+      let input = $(el).find('.input > *');
+      let maxLength = input.attr('maxlength');
+      let label = $('<span class="counter">');
+      label.appendTo($(el));
+      input.keyup(function(){
+        let n = $(this).val().length;
+        label.text((maxLength - n) + ' caracteres restantes');
+      });
+      input.keydown(function(){
+        $(this).keyup();
+      });
+      input.keyup();
+    });
+  });
+
+</script>
+
+        </div>
+      </div>
+
+      <footer>
+        <div class="content">
+          © 2020 ROTA | Festival de Roteiro Audiovisual - Todos os direitos reservados
+        </div>
+      </footer>
+
+    </main>
+
+    <script>
+      window.mobileMenuOpen = false;
+
+      $(document).ready(function(){
+        window.menuFixed = false;
+
+        $(window).scroll(function(){
+          if (window.scrollY > 85){
+            if (!window.menuFixed){
+              if (!window.mobileMenuOpen){
+                $('nav').addClass('fixed');
+                $('header').addClass('margin-bottom');
+                window.menuFixed = true;
+              }
+            }
+          } else {
+            if (window.menuFixed){
+              $('nav').removeClass('fixed');
+              $('header').removeClass('margin-bottom');
+              window.menuFixed = false;
+            }
+          }
+        });
+
+        $('#mobile-menu').click(function(){
+          if (!window.mobileMenuOpen){
+            $('nav').css({'left': '0%'});
+            $('nav').removeClass('fixed');
+            $('header').removeClass('margin-bottom');
+          } else {
+            $('nav').css({'left': '100%'});
+          }
+          window.mobileMenuOpen = !window.mobileMenuOpen;
+        });
+      });
+
+      window.scroll();
+
+      $(document).ready(function(){
+        $('.ajaxForm').submit(function(ev){
+          ev.preventDefault();
+          let btn = $(this).find('button[type=submit]');
+          let originalText = btn.text();
+          btn.text('Aguarde, enviando...');
+          btn.addClass('grey').removeClass('action').attr('disabled', true);
+          $(this).find('.errorlist.ajaxForm').remove();
+
+          $.getJSON({
+            url: $(this).attr('action'),
+            method: $(this).attr('method'),
+            data: $(this).serialize(),
+            success: function(r){
+              btn.removeClass('grey').addClass('action').attr('disabled', false);
+              btn.text(originalText);
+
+              if (r.error){
+                let _err = '<ul class="errorlist ajaxForm"><li class="t">ERRO';
+                _err += '</li><li class="r"></li></ul>';
+                let err = $(_err);
+                err.find('.r').text(r.error);
+                btn.before(err);
+              } else {
+                $(this)[0].onSuccess(r);
+              }
+            }.bind(this)
+          });
+        });
+      });
+
+    </script>
+
+
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173626616-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173626616-1');
+      </script>
+    
+
+  </body>
+</html>
