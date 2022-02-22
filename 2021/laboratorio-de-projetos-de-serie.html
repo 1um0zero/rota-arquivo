@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="http://www.rotafestival.com">
+    <meta property="og:title" content="ROTA | Festival de Roteiro Audiovisual">
+    <meta property="og:image" content="static/core/img/logo_2020.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="static/core/css/reset.min.css">
+    <link rel="stylesheet" href="static/core/css/main.min.css?v=2.2">
+    <link rel="stylesheet" href="static/core/css/common.css">
+    <link rel="stylesheet" href="static/core/fontawesome-free-5.15.1-web/css/all.css">
+    
+    <script src="static/core/js/jquery-3.4.1.min.js"></script>
+    <script src="static/core/js/jquery.mask.min.js"></script>
+    <script src="static/core/js/common.js"></script>    
+    <title>ROTA | Festival de Roteiro Audiovisual</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content">
+          <a href="index.html" class="raw">
+             <img src="static/core/img/logo4.png" width="150">
+          </a>
+         
+          <a href="https://www.instagram.com/rotafestival" title="Rota no Instagram" target="_blank" class="btn" style="margin: 12px 40px 0 0; font-size: 200%; background-color:transparent;">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCFH1AJvRUHG2kQPG7ZyR8yQ" title="Rota no YouTube" target="_blank" class="btn" style="margin: 12px 0 0 0; font-size: 200%; background-color:transparent;">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.facebook.com/rotafestival" title="Rota no Facebook" target="_blank" class="btn" style="margin: 12px 0 0 0; font-size: 200%; background-color:transparent;">
+              <i class="fab fa-facebook-square"></i>
+          </a>
+        </div>
+      </header>
+  
+      <div id="mobile-menu" style="display:none"></div>
+
+      <nav>
+        <img src="static/core/img/logo5.png" width="150" id="mobile-menu-logo"
+          style="display:none">
+        <ul>
+          <li class="logo">
+            <a href="index.html">
+                <img src="static/core/img/logo4.png">
+            </a>
+          </li>
+          
+          <li class="">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="">
+            <a href="programacao.html">Programação</a>
+          </li>
+          
+          <li class="">
+            <a href="equipe.html">Equipe</a>
+          </li>
+          
+          <li class="">
+            <a href="concurso-de-roteiros-de-curtas.html">Concurso de Roteiros de Curtas</a>
+          </li>
+          
+          <li class="">
+            <a href="encontro-de-negocios.html">Encontro de Negócios</a>
+          </li>
+          
+          <li class="">
+            <a href="laboratorio-de-projetos-de-serie.html">Laboratório de Projetos de Série</a>
+          </li>
+          
+          <li class="">
+            <a href="mostra-competitiva-de-curtas.html">Mostra Competitiva de Curtas</a>
+          </li>
+          
+          <li class="">
+            <a href="seminario.html">Seminário</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="content">
+        
+        <div id="banner">
+          <div class="banner content">
+            <h1>Laboratório de Projetos de Série</h1>
+          </div>
+        </div>
+        
+
+        <div class="content min-height">
+          
+
+<style>
+  .box-payment {
+    border:1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 30px;
+    padding: 20px;
+  }
+  .col-duo.concurso {
+    grid-template-columns: 2fr 1fr;
+  }
+  .clearP p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .small {
+    font-size: 14px;
+  }
+  span.counter {
+    color: #666;
+    font-size: 12px;
+  }
+
+  @media (max-width: 1300px){
+    .col-duo.concurso {
+      grid-template-columns: 3fr 2fr;
+    }
+  }
+
+ul.convidados {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.convidados li {
+  width: calc(50% - 30px);
+}
+ul.convidados li:nth-child(odd) {
+  margin: 0 30px 0 0;
+}
+ul.convidados li p {
+  text-align: justify;
+  font-size: 13px;
+}
+ul.convidados li img {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 250px;
+}
+ul.convidados h2 {
+  margin-top: 10px;
+}
+ul.convidados h3 {
+  margin: 0 0 10px;
+  color: #666;
+}
+
+@media (max-width: 1024px){
+  ul.convidados {
+    margin: 5px;
+  }
+  ul.convidados h2 {
+    margin: 10px 5px 0 10px;
+  } 
+  ul.convidados h3 {
+    margin: 2px 0 5px 10px;
+  }
+  ul.convidados li {
+    width: 100%;
+  }
+  ul.convidados li:nth-child(odd) {
+    margin: 0;
+  }
+  ul.convidados li img {
+    width: 100%;
+  }
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+<input type="hidden" name="csrfmiddlewaretoken" value="ONvtJJhiBw2SbA4Q0tBCeoCwX14gym2Xbq5kVIz80EuMVi25ibCGCaTKdYPGcyEa">
+<div class="concurso">
+  <div>
+    
+    <div class="contest_image">
+      <div style="width: 100%; height: 400px; background: url(' static/core/img/banner-projeto.jpg ');background-position:bottom"></div>
+    </div>
+    
+
+    <div class="menu_contest">
+      
+      
+        <div class="item_menu_contest">
+          <a href="javascript:regulamento()">Regulamento</a>
+        </div>
+      
+      
+        <div class="item_menu_contest">
+          <a href="javascript:convidados()">
+             Convidados
+            
+          </a>
+        </div>
+      
+      
+        <div class="item_menu_contest">
+          <a href="javascript:inscricao()">Inscrição</a>
+        </div>
+      
+    </div>
+
+    <div class="c contentDescription">
+        <br><br>
+        <strong>Vencedores</strong>
+        <br><br>
+        1º Melhor Pitching pelo Júri Oficial - <strong>SEM FILTRO</strong>, roteiro de Júnia Lemos
+        <br><br>
+        2º Melhor Pitching pelo Júri Oficial – <strong>DENTRO DA NOITE</strong>, roteiro de Rodrigo Pinto
+        <br><br>
+        3º Melhor Pitching pelo Júri Oficial - <strong>CAMISA 10</strong>, roteiro de André dos Passos Pacano
+        <br><br>
+        Melhor Pitching pelo Júri Popular – <strong>LOUISE</strong>, roteiro de Soraya Helena
+        <br><br>
+      <h4>Descrição</h4>
+      <div id="contest_description">
+
+<p>O <strong>Laborat&oacute;rio de Projetos de S&eacute;ries </strong>&eacute; composto por <strong>consultorias</strong>&nbsp;que acontecer&atilde;o nos dias&nbsp;<strong>25 e 26 de novembro de 2020&nbsp;de 9h &agrave;s 18h,</strong> e de <strong>Pitching</strong>, que acontecer&aacute; no dia <strong>29 de novembro de 2020. </strong>O<strong> ROTALab </strong>tem o objetivo de promover, atrav&eacute;s de premia&ccedil;&atilde;o, bons projetos de estudantes e iniciantes contribuindo com seu desenvolvimento e apontando caminhos para a sua viabiliza&ccedil;&atilde;o.</p>
+<div>Para se inscrever &eacute; necess&aacute;rio informar os seguintes itens do projeto: <strong>T&iacute;tulo, G&ecirc;nero, Logline, N&uacute;mero de epis&oacute;dios, Tipo ou Formato, Conceito da s&eacute;rie, Arco da/o protagonista, Universo, Personagens principais, Arco da temporada 1 e Temporadas&nbsp; futuras</strong>. E dever&aacute; anexar: <strong>documento com foto</strong>, <strong>s</strong><strong>inopse do piloto;</strong> <strong>termo de responsabilidade</strong>, <strong>c</strong><strong>omprovante ou protocolo</strong> <strong>de Registro na Biblioteca Nacional </strong>ou de outra institui&ccedil;&atilde;o como o <a href="www.registrodeobras.com" target="_blank" rel="noopener">www.registrodeobras.com</a><strong>;</strong> <strong>a</strong><strong>rco da/o protagonista</strong>, caso se aplique<strong>;</strong> <strong>d</strong><strong>ocumento</strong> que comprove a libera&ccedil;&atilde;o dos direitos, caso se aplique e <strong>carta de autoriza&ccedil;&atilde;o</strong> do(s) coautor(es), caso se aplique. As descri&ccedil;&otilde;es dos itens est&atilde;o no Regulamento.<strong><br /></strong></div>
+<p>A Curadoria selecionar&aacute; 10 projetos finalistas para participar do Laborat&oacute;rio. Cada selecionado receber&aacute; consultorias de 4 profissionais reconhecidos, nos dias 25 e 26 de novembro, e apresentar&aacute; o Pitching do seu projeto para o J&uacute;ri Oficial do <strong>IV ROTA</strong> e para o p&uacute;blico, que eleger&atilde;o o <strong>Melhor Pitching</strong> pelo J&uacute;ri Oficial e pelo J&uacute;ri Popular, <strong>com entrega de pr&ecirc;mio no dia 29 de novembro de 2020</strong>.</p>
+<p><span style="background-color: #ffffff;"><strong>As inscri&ccedil;&otilde;es ficam abertas de 00h00 de 27 de julho at&eacute; as 23:59h de 1&ordm; de setembro de 2020.</strong></span></p>
+<p><strong>A Sele&ccedil;&atilde;o dos Finalistas ser&aacute; divulgada em<span style="background-color: #ffffff;"> 04 de outubro de 2020</span></strong>.</p>
+<p><strong>As inscri&ccedil;&otilde;es</strong> est&atilde;o sujeitas &agrave; compra de ingressos atrav&eacute;s do <span style="background-color: #ffffff;"><strong>Combo</strong> </span>ou por <strong>Inscri&ccedil;&atilde;o Avulsa.</strong></p>
+<p>- <span style="background-color: #ffffff;"><strong>Combo</strong> </span>- o inscrito&nbsp;tem direito a inserir at&eacute;<span style="background-color: #ffffff;">para quem tem <strong>3 (tr&ecirc;s) projetos para o Encontro de Neg&oacute;cios e/ou para o Laborat&oacute;rio de Projetos de S&eacute;ries</strong>. Valor = R$ 140,00 (cento e quarenta reais).</span></p>
+<p>- <strong>Inscri&ccedil;&atilde;o avulsa no Laborat&oacute;rio</strong> <span style="background-color: #ffffff;">- R$70,00 (setenta reais) por projeto.</span></p>
+<p><span style="background-color: #ffffff;">-&nbsp;<strong>Inscril&atilde;o avulsa no Encontro de Neg&oacute;cios -&nbsp;</strong>R$50,00 (cinquenta reais) por projeto.</span></p>
+<p>D&uacute;vidas e sugest&otilde;es? Envie email para <strong>rotalab2020@gmail.com</strong>.</p>      
+     
+    </div>
+
+      
+      
+        
+          <h4 id="h4_convidados">Convidados</h4>
+        
+        
+        <ul class="convidados">
+          
+          <li>
+            <div class="block">
+              <h2>ALEXANDRE GUERREIRO</h2>
+              <h3>Curador</h3>
+              <p>
+                
+                  <img src="static/convidados/617161e7-4f06-4575-a8af-1691fc75f224.jpg">
+                
+                Doutor em Comunicação pelo PPGCOM/UFF, com pós-doutorado em Educação pela FE/UFRJ. Mestre em Comunicação pelo PPGCOM/UFF. Bacharel e Licenciado em História pela UERJ e Bacharel em Comunicação Social (Cinema) pela UFF. Integra os grupos de pesquisa CINEAD/LECAV: cinema para aprender e desaprender, do Laboratório de Educação,  inema e Audiovisual da UFRJ, e QUADRO A QUADRO: projetando ideias, refletindo imagens, da UFRB. Atualmente, é Professor Docente I de História e Filosofia na Secretaria de Estado de Educação do Rio de Janeiro. Produtor, diretor e roteirista de obras audiovisuais. Produtor e Curador de Mostras e Festivais. Coordenou a produção da 8a e 9a edições da Mostra Cinema e Direitos Humanos e do projeto Inventar com a Diferença, realizados pela UFF, em parceria com a Secretaria de Direitos Humanos da Presidência da República e o Ministério da Cultura.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>ANA PACHECO</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/0543f57e-1b67-48d4-ba65-b615d2b304a0.jpg">
+                
+                Formada em Comunicação Social com mestrado em Antropologia e especialização em roteiro, trabalha há mais de 20 anos com audiovisual e educação. Como roteirista, participou da série infantil Gaby Estrella, exibida no Canal Gloob e indicada ao Emmy Kids Awards. Criou e escreveu a série infanto juvenil Ernesto, O Exterminador de Seres Monstruosos (e outras porcarias) – uma inédita coprodução com o Uruguai, exibida na TV Brasil e na Televisión Nacional del Uruguay em 2019. Participou também do desenvolvimento da primeira temporada da série Juacas, exibida no Disney XD. Coordenou o núcleo criativo CALEIDOSCÓPIO, da 3 Tabela Filmes, onde escreveu o longa “Derrapada”, uma adaptação do livro “Slam” de Nick Hornby, em produção. Em animação, foi roteirista e scriptdoctor da segunda temporada de DINO AVENTURAS e roteirista das séries Billy e Catarina, em produção para TV COM - BA, Galalau e Corujina (ZooMoo), e Arabela e Aristóteles, parte do núcleo criativo ANIMA BAHIA. Participou da equipe de roteiristas da série de ficção dramática “A Dona da Banca”, em produção para o CinebrasilTV. Roteirista-chefe das séries dramática “Doutor Palhaço” e “Bem Vindo ao Inferno”. Faz a redação final da série Detetives do Prédio Azul, atualmente no desenvolvimento da 16a temporada. Atualmente escreve também um longa metragem musical de sua autoria.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>BIA CRESPO</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/7b72b75d-f3e9-468c-8a0b-3f5877bea5d9.jpg">
+                
+                Formada em Audiovisual pela ECA-USP, se especializou em roteiro na Vancouver Film School. Foi coordenadora de conteúdo da Paris Entretenimento por dois anos, responsável por curadoria e desenvolvimento de projetos. Em 2019, foi contemplada com Melhor Pitching e 2° lugar na categoria Piloto de Série do FRAPA e Melhor Argumento Infantojuvenil no Prêmio Cabíria. Roteirizou os longas "Galeria Futuro", "10 Horas Para o Natal" e "A Sogra Perfeita", todos previstos para estrearem em 2020. Atualmente é roteirista fixa da Conspiração Filmes e sócia-fundadora da TDC Conteúdo.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>CAROLINA AMARAL</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/7f772ea2-2456-4ae6-8a15-b8968cbdeda5.jpg">
+                
+                Pesquisadora e professora (FAPERJ/UFF), roteirista e produtora trabalhando com audiovisual desde 2007. Formada em Cinema (UFF), é doutora e mestre pelo PPGCOM-UFF, na linha de pesquisa "Estudos de Cinema e Audiovisual". Já trabalhou como professora na Escola de Cinema Darcy Ribeiro, na graduação em Cinema da UFF e em oficinas de roteiro para escolas públicas municipais, estaduais e federais. Suas pesquisas se concentram em gêneros audiovisuais, Estudos de narrativa e escrita audiovisual. Atualmente, é coordenadora do ST Estudos de Roteiro da SOCINE e desenvolve pelo PPGCINE-UFF a pesquisa de pós-doutorado "Conforto Narrativo: melodrama, crise e catarses de ficções seriadas televisivas", com supervisão de Mariana Baltar Freire.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>DANIEL FRAIHA</h2>
+              <h3>Curador</h3>
+              <p>
+                
+                  <img src="static/convidados/1ccd707d-f877-4106-8534-9098c6cdf802.jpg">
+                
+                É jornalista e roteirista, sócio da Projéteis. Graduado e mestre pela UFRJ, trabalhou na série Pela Fechadura (drama/2019), do canal Prime Box Brazil; nos longas Abá e sua banda (animação/2022) e Vovó é a Mãe! (comédia/sem previsão); e nos documentários A quem interessa a ignorância, A Ruptura e Alternativos (em produção). Antes disso, foi editor do Petronotícias, subeditor da coluna Marcia Peltier, no Jornal do Commercio, e teve passagens pelo G1 (TV Globo) e pelo Centro de Informação da ONU.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>JULIANA MILHEIRO</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/d6e69a74-cfd2-4e8f-98d7-59686255e806.jpg">
+                
+                Formada em cinema e vídeo pela Universidade Federal Fluminense, com mestrado em roteiro para cinema e TV pela Screen Academy Scotland/ Edinburgh Napier University. Em 2018, foi finalista do FRAPA-Festival de Roteiro Audiovisual de Porto Alegre e semifinalista do Prêmio Cabíria de Roteiro com o roteiro de longa-metragem “Confete” e, em 2019, ganhou o prêmio de melhor longa-metragem do FRAPA com o roteiro “Macuxi”. Juliana também escreveu para séries infantis exibidas no Canal Futura e na TV Escola e fez desenvolvimento e roteiro de projetos de séries de ficção e animação contemplados por editais de desenvolvimento. Atualmente, Juliana é Coordenadora de Conteúdo do Gloob.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>MARIA JULIA LIMIA</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/a6ff876d-1d82-4e36-9b84-1afc1183c591.jpg">
+                
+                Formada em Letras e com doutorado em Literatura Comparada, com foco no teatro carioca do século XIX. Atuou como professora de Literatura Infantil no Colégio Pedro II; Literatura e Cultura Brasileira na Universidade Estácio de Sá; Teatro Brasileiro na Escola de Teatro Martins Pena. Atualmente leciona na Escola de Cinema Darci Ribeiro a disciplina de Fundamentos da Narrativa.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>OHANA ABREU</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/d3f82a97-0434-4d05-9f54-fe4caf552c1f.jpg">
+                
+                Realizadora audiovisual, produtora, roteirista e pesquisadora, co-fundou em 2011 o Coletivo Gaiolas, grupo de realizadoras que discutem sobre o espaço da mulher no audiovisual com produções que abrangem paridade de gênero, representação social, formação de público, arte e educação, produção cultural e economia criativa. Em suas obras, dialoga sobre hibridismo entre cinema e teatro. Integrou a curadoria do I e II ROTA – Festival de Roteiro Audiovisual (2017/2018).
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>PEDRO REINATO</h2>
+              <h3>Curador</h3>
+              <p>
+                
+                  <img src="static/convidados/dc2d0368-a309-4795-905f-991b34b17a80.jpg">
+                
+                É roteirista, script-doctor e coordenador pedagógico da Roteiraria. Possui especialização em Literatura pela PUC-SP e mestrado e doutorado em Literatura Brasileira pela USP. Já criou conteúdo para diferentes plataformas dos segmentos editorial, publicitário e audiovisual. É professor da pós-graduação da FAAP no curso de Roteiro Audiovisual. Também se dedica ao desenvolvimento de roteiros para longas e séries de ficção em diferentes núcleos criativos.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>RENATA SOFIA</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/6b247e65-d0dc-49a9-9a15-fd5997e84612.jpg">
+                
+                Colaboradora de projeto de dramaturgia diária em desenvolvimento da TV Globo. Autora e Roteirista do longa original "MC Estrela" em produção pela Kromaki. Roteirista colaboradora da série infantil “Detetives do Prédio Azul” (12 e 13 temporadas); das séries de ficção em desenvolvimento “Ladrão que Rouba Ladrão”, “Paixão FC”, “Sonhos Suburbanos” e “Dissonantes”; e das séries animadas “Arabela”, “Get Along Gang” e do desenvolvimento do Núcleo Criativo da 2Dlab. Jurada do Concurso de Piloto de Séries - FRAPA 2019. Participou do painel “Afrobrasilidades” com o projeto original de série infantil "O Laboratório do Porão" no Rio Content Market 2017. Selecionada para o 1º Laboratório de Narrativas Negras para o Audiovisual - Flup, Film2B e TV Globo. Formada pela UERJ em Comunicação Social, trabalhou por quatro anos na TV Globo como produtora de conteúdo web.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>SANDRA PEREIRA</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/76df586d-d11c-4608-b4fd-fe5df3e3e588.jpg">
+                
+                Jornalista, mestre em Mídia e Cotidiano com ênfase em Cinema Documentário pela UFF. Roteirista pela Escola de Cinema Darcy Ribeiro, assina o roteiro do longa documentário “Diga meu nome”, exibido em vários festivais no Brasil e no exterior. Foi finalista do Laboratório de Roteiristas Estreantes, da Darcy Ribeiro. Ministrou cursos e oficinas de roteiro de ficção, produção audiovisual e cinema documentário em instituições como SESC Rio, TV Brasil e Escola de Cinema Darcy Ribeiro.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>YOYA WURSCH</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/8b67a86f-c01d-4f73-9e18-c32144106fc1.jpg">
+                
+                Começou no cinema com Bete Balanço, depois Rock Estrela, Rádio Pirata, Mistério no Colégio Brasil, Lua de Cristal, Sonho de Verão, Espelho D’Água, Copacabana, Minha Vida Em Suas Mãos e muitos outros. No teatro é autora de Tap Station, Nem morto, que dirigiu e escreveu com Luiz Carlos Góes, Um Toque de Hitchcock, Point, Felizes da Vida, entre outras peças encenadas com sucesso. Em televisão assinou o roteiro da série de ficção “Republica do Peru”, 2015 – 2017 (HBO) e é autora de novelas como Dona Anja, Mandacaru, Malhação, Dance Dance Dance, Vende-se Um Véu De Noiva, além dos programas Brava Gente e Você Decide que tiveram grande repercussão de público e mídia. Leciona Escritura de Curta-metragem e de Séries na Escola de Cinema Darcy Ribeiro.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>DANI REULE</h2>
+              <h3>Consultora</h3>
+              <p>
+                
+                  <img src="static/convidados/2482a3a3-1d89-4c39-9ea3-0f267932de21.jpg">
+                
+                DANI REULE - É roteirista, atriz,  jornalista, mestra em Comunicação e Informação e certificada pelo Professional Program in Writing for Television da UCLA. Escreveu a série ‘Baile de Máscaras’ (TV Cultura), o longa ‘Na Batalha’  (roteiro finalista do FRAPA 2017) e foi colaboradora do autor Marcílio Moraes na série  ‘Pigmaleão do Brejo’ (Rede Record). Teve curtas de sua autoria apresentados em festivais nacionais e é criadora da sitcom 'Uma vida de Zenilde' (Tambellini Filmes). É membro da diretoria da Gedar e foi palestrante no VFX-Rio, na Semana do Audiovisual Primeiro Plano (Juiz de Fora), no Rio WebFest e no ROTA. É ainda professora na ABC Cursos de Cinema e no Instituto Infnet e ministrou cursos de roteiro na Escola de Cinema Darcy Ribeiro e na pós-graduação em Roteiro da FACHA, além de ter seu próprio curso de criação de série. Além de consultora do Lab, Dani também integra a mesa SALA DE ROTEIRO: O PROCESSO CRIATIVO.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>FIDELYS FRAGA</h2>
+              <h3>Consultor</h3>
+              <p>
+                
+                  <img src="static/convidados/dd8a1dfb-5b69-418d-9ae3-dd90472341d4.jpg">
+                
+                FIDELYS FRAGA - roteirista, dramaturgo e professor de roteiro, formado pela Escola de Cinema Darcy Ribeiro e licenciando pela UFF. Seus trabalhos mais recentes incluem a série doc Fronteiras Fluidas, exibida em 2020 no Canal Curta!, e as séries de ficção Arembepe, como roteirista chefe, e Baile de Máscaras, exibida em 2019 na TV Brasil, ambas para Giros Filmes. Também escreveu a série doc Roda de Choro em fase de finalização para o Canal Curta! Além de ser consultor do Lab, Fidelys integra a mesa SALA DE ROTEIRO: O PROCESSO CRIATIVO.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>GUSTAVO MORAES</h2>
+              <h3>Consultor</h3>
+              <p>
+                
+                  <img src="static/convidados/1c89965b-d58e-48f3-83c2-1f76ba21fcf3.jpg">
+                
+                GUSTAVO MORAES - Mestre pela Columbia University nas áreas de produção e direção audiovisual. Como roteirista, participou dos laboratórios Binger Film Lab (Holanda), Produire au Sud-Festival 3 Continents (França) e do Laboratório SESC de Roteiros (Brasil). Moraes realiza filmes, documentários e publicidade. Leciona há mais de 10 anos nas áreas de roteiro, produção e direção. Atua também como consultor de roteiros e projetos audiovisuais. Foi consultor do longa-metragem Paraíso Perdido, de Monique Gardenberg, (2018) e roteirista do documentário Moda Sem Medida, de Vanessa Araújo para o Canal Fashion TV. Moraes integra a mesa SALA DE ROTEIRO: O PROCESSO CRIATIVO, além de ser consultor do Lab.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>MONICA SOLON</h2>
+              <h3>Consultora</h3>
+              <p>
+                
+                  <img src="static/convidados/0f491eb4-71f7-4307-8c68-dfd5feef9734.jpg">
+                
+                MONICA SOLON - É roteirista e escritora. Leciona o Roteiro Adaptado na Escola de Cinema Darcy Ribeiro e em cursos livres. Fez mestrado em Creative & Critical Writing com especialização em escrita, análise e desenvolvimento de roteiro na Inglaterra. É co-roteirista, com Steve Hawes, na adaptação para o cinema do romance A Girl Made of Dust, de Nathalie Abi-Ezzi, a ser dirigido por Hiam Abbass (2019/20). Participou da sala de roteiristas da série Baile de Máscaras (Produtora Giros), em exibição na TV Cultura. Desenvolveu e é roteirista nas séries Seeing in the Darkness e Youngsters, a serem produzidas pela produtora Talents Content (EUA). Sua proposta de adaptação para as telas do romance A Capitoa, de Bernadette Lyra, foi selecionado para o Cine Libri Workshop, com Linda Seger, a ser realizado na Bulgária, em outubro. Website: www.monicasolon.com. Monica integra a mesa SALA DE ROTEIRO: O PROCESSO CRIATIVO, além de ser consultora do Lab.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>JOSÉ CARVALHO</h2>
+              <h3>Jurado De Pitching</h3>
+              <p>
+                
+                  <img src="static/convidados/4f9bafb9-8a11-460f-859a-983b53ace0fe.jpg">
+                
+                JOSÉ CARVALHO (Roteiraria); @roteiraria - roteirista, mestre em Literatura, com formação em análise de roteiro pela Writer’s Boot Camp, nos Estados Unidos, e sócio-fundador da Roteiraria. Três vezes premiado no Grande Prêmio de Cinema Brasil (maior premiação do mercado audiovisual brasileiro), nas categorias roteiro original e roteiro adaptado, José Carvalho é creditado em 16 longas-metragens. Walter Salles, Wagner Moura, Daniela Thomas, Cacá Diegues, Cao Hamburguer, Renê Sampaio e Paulo Morelli são alguns dos cineastas com os quais já trabalhou, alternando-se entre escrita e análise narrativa. Em TV, escreveu sucessos como a telenovela Xica da Silva (TV Manchete; Telemundo), o humorístico Sai de Baixo (TV Globo), o interativo Você Decide (TV Globo) e o procedural Carga Pesada (TV Globo). À frente da escola e hub de conteúdos Roteiraria, José Carvalho e equipe têm trabalhado tanto com roteiristas consagrados, como revelado novos talentos para o mercado audiovisual brasileiro.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>LAÍS MENDES PIMENTEL</h2>
+              <h3>Jurada De Pitching</h3>
+              <p>
+                
+                  <img src="static/convidados/aecf8d83-f19c-4679-91df-6ab83c638227.jpg">
+                
+                Formada em jornalismo pela PUC/RJ, trabalhou em empresas como TV Globo, TV Manchete e BBC em Londres. Autora-roteirista da TV Globo há 12 anos, desde então estuda dramaturgia. Colaborou em  programas de variedades, reality show e projetos de minisséries e quadros envolvendo jornalismo e entretenimento. Na teledramaturgia, escreveu para duas novelas: Cheias de Charme e Geração Brasil. Paralelamente, oferece os serviços de script doctoring e desde 2014 dá palestras e oficinas de roteiro de séries e novelas. Durante a pandemia, descobriu o prazer de ser protagonista em lives e coadjuvante de mesas-redondas remotas. Ainda durante o isolamento social, inaugura nova ocupação: a de ghost writer. Essa será a terceira participação como júri no ROTA.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>MARCOS PIERI</h2>
+              <h3>Jurado De Pitching</h3>
+              <p>
+                
+                  <img src="static/convidados/4fc0de88-bd66-47a0-b1a6-d5e9a44f8997.jpg">
+                
+                MARCOS PIERI (Raccord); @raccordproducoes - Formado em Cinema e em Publicidade pela PUC-Rio, Marcos iniciou sua carreira na produção de curtas dentro da própria faculdade e fora dela. Desde 2014 integra o grupo da Raccord Produções, onde participa ativamente na produção dos projetos da casa, acompanhando sua execução desde a ideia inicial até toda sua cauda longa. A exemplo estão os longas Madalena (2021 | Madiano Marcheti); Cedo Demais (2021 | José Lavigne); Pluft (2021 | Rosane Svartman); Missão Cupido (2020 | Rodrigo Bittencourt); Correndo Atrás (2020 | Jeferson De); Angel Vianna: voando com os Pés no Chão (2018 | Cristina Leal); e Os Maias (2014 | João Botelho). Além das séries A Dona da Banca (2021 | Marton Olympio e Hsu Chien), As Canções da Minha Vida (2017| Bruno Levinson) e Série C (2017 | Samir Abujamra).
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>RAPHAEL BULCÃO PEREZ</h2>
+              <h3>Jurado De Pitching</h3>
+              <p>
+                
+                  <img src="static/convidados/4fac484b-0163-441b-8b3f-d04ed527e9d8.jpg">
+                
+                Produtor de conteúdo da NBCUniversal Brasil. Responsável pelos projetos de ficção e reality shows originais dos canais Universal TV, Studio Universal e SY-FY desde o desenvolvimento dos roteiros à produção, edição, análise de performance. Passou pelos cursos de Jornalismo na UERJ; Cinema na UFPE, e Teatro na UNIRIO até se fixar em Rádio e TV na UFRJ, onde pesquisou a relação entre o cinema brasileiro e as artes visuais. Hoje, investiga as diferentes relações entre teatro e cinema - com foco em dramaturgia teatral e roteiros audiovisuais.
+              </p>
+            </div>
+          </li>
+          
+        </ul>
+      
+
+              
+        <h4 id="h4_regulamento" name="h4_regulamento">Regulamento</h4>
+        <div id="regulation">
+          <div>
+            <p class="MsoNormal"><strong>1. OBJETIVO </strong></p>
+<p class="MsoNormal"><strong>1.1 </strong>O&nbsp;<strong>Laborat&oacute;rio de Projetos de S&eacute;rie</strong> do<strong> IV ROTA - Festival de Roteiro Audiovisual </strong>tem o objetivo de valorizar, qualificar e premiar bons Projetos de S&eacute;ries de <strong>fic&ccedil;&atilde;o</strong> escritos por&nbsp;<strong>estudantes</strong>&nbsp;e&nbsp;<strong>iniciantes</strong><strong>*</strong>, contribuindo com seu desenvolvimento e abrindo portas para sua realiza&ccedil;&atilde;o.</p>
+<p class="Default"><strong>1.1.1</strong> Aceita-se a participa&ccedil;&atilde;o de <strong>estudantes</strong> e <strong>iniciantes</strong> maiores de idade desde que <strong>tenham</strong> <strong>no m&aacute;ximo</strong> <strong>03 (tr&ecirc;s) roteiros de curtas-metragens </strong>filmados e exibidos em festival, mostra de cinema ou na web em plataformas de streaming, <strong>n&atilde;o podendo ter nenhum roteiro de longa ou s&eacute;rie </strong>j&aacute; exibido em festival, mostra de cinema ou na web em plataformas de streaming, o que dever&aacute; ser atestado atrav&eacute;s do <strong>Termo de Responsabilidade </strong>preenchido, assinado e anexado pelo concorrente no ato da inscri&ccedil;&atilde;o.</p>
+<p class="MsoListParagraph"><strong>1.2</strong> O <strong>Laborat&oacute;rio</strong> compreende <strong>consultorias</strong> com 4 profissionais reconhecidos, e um <strong>Pitching </strong>final para um <strong>J&uacute;ri</strong> convidado pelo Festival. Tanto as consultorias quanto o <strong>Pitching</strong> ser&atilde;o sobre o Projeto de S&eacute;rie inscrito na presente sele&ccedil;&atilde;o.</p>
+<p class="MsoListParagraph">&nbsp;</p>
+<p class="Default"><strong>2. DATA E LOCAL </strong></p>
+<p class="Default"><strong>2.1 </strong>As consultorias do <strong>Laborat&oacute;rio </strong>acontecer&atilde;o nos dias <strong>25 e 26 de novembro de 2020</strong>. O <strong>Pitching do Laborat&oacute;rio</strong> acontecer&aacute; no dia <strong>29 de novembro de 2020</strong>.</p>
+<p class="Default"><strong>2.2 </strong>Tanto as <strong>Consultorias </strong>quanto o<strong> Pitching </strong>do<strong> Laborat&oacute;rio</strong> acontecer&atilde;o on line atrav&eacute;s da <strong>ferramenta de v&iacute;deo confer&ecirc;ncia Zoom Meeting</strong>.</p>
+<p class="Default"><strong>2.3 </strong>&Eacute; <strong>imprescind&iacute;vel</strong> que os selecionados para o <strong>Laborat&oacute;rio</strong> tenham disponibilidade para estar presentes virtualmente nos dias <strong>25, 26 e 29 de novembro de 2020</strong>. Caso o selecionado n&atilde;o possa comparecer em qualquer um dos dias, tanto das <strong>Consultorias</strong> quanto do <strong>Pitching</strong>, deve avisar &agrave; organiza&ccedil;&atilde;o do Festival e ser&aacute; substitu&iacute;do por um suplente.</p>
+<p class="Default">&nbsp;</p>
+<p class="MsoNormal"><strong>3. INSCRI&Ccedil;&Otilde;ES</strong></p>
+<p><strong>3.1</strong>&nbsp;Os participantes inscritos no <strong>Combo</strong>&nbsp;t&ecirc;m o direito de inscrever&nbsp;<span style="background-color: #ffffff;">at&eacute; 3 (tr&ecirc;s) projetos para o Encontro de Neg&oacute;cios e/ou para o Laborat&oacute;rio de Projetos de S&eacute;ries</span>. Aqueles que desejam participar com <strong>mais de 3 (tr&ecirc;s) projetos</strong> devem fazer, al&eacute;m da inscri&ccedil;&atilde;o no <strong>Combo</strong>, a <strong>Inscri&ccedil;&atilde;o Avulsa</strong> de cada um dos demais Projetos, nos termos previstos no item <strong>3.2</strong>.</p>
+<p><strong>3.2</strong> A <strong>Inscri&ccedil;&atilde;o Avulsa</strong> no <strong>Laborat&oacute;rio </strong>poder&aacute; ser utilizada tanto pelos participantes do <strong>Combo </strong>que se interessarem em inscrever mais de 3 (tr&ecirc;s) projetos, quanto por quem n&atilde;o for se inscrever no Combo.</p>
+<p><strong>3.3</strong> N&atilde;o h&aacute; limite de inscri&ccedil;&atilde;o de Projetos por autor.</p>
+<p><strong>3.4 </strong>A inscri&ccedil;&atilde;o, feita mediante pagame<span style="background-color: #ffffff;">nto, estar&aacute; aberta a partir das<strong>&nbsp;</strong><strong>00h00 do dia 27 de julho</strong> <strong>at&eacute; as 23h59 do dia 1&ordm; de setembro de 2020.</strong></span></p>
+<p class="MsoNormal"><strong>3.5</strong>&nbsp;Estão habilitados a se inscrever roteiristas&nbsp;<strong>estudantes</strong>&nbsp;e&nbsp;<strong>iniciantes brasileiros </strong><strong>ou naturalizados, residentes ou n&atilde;o no Brasil,</strong> <strong>maiores de 18 anos</strong>.</p>
+<p class="MsoNormal"><strong>3.6</strong>&nbsp;O <strong>IV ROTA </strong>aceita inscri&ccedil;&otilde;es de projetos escritos em outras l&iacute;nguas que n&atilde;o o portugu&ecirc;s, desde que estejam inteiramente traduzidos para o portugu&ecirc;s a fim de que possam ser avaliados.</p>
+<p class="MsoNormal"><strong>3.</strong><strong>7</strong>&nbsp;Para cada Projeto será contabilizada uma nova inscri&ccedil;ão.</p>
+<p class="MsoNormal"><strong>3.8</strong>&nbsp;A inscri&ccedil;&atilde;o neste <strong>Laborat&oacute;rio</strong> dar-se-&aacute; atrav&eacute;s do seguinte processo:</p>
+<p class="Default"><strong>3.8.1 </strong>Preencher o <strong>Formul&aacute;rio de Inscri&ccedil;&atilde;o do Laborat&oacute;rio </strong>por completo com <strong>T&iacute;tulo, G&ecirc;nero, Logline, N&uacute;mero de epis&oacute;dios, Tipo ou Formato, Conceito da s&eacute;rie, Arco da/o protagonista, Universo, Personagens principais, Arco da temporada 1 e Temporadas&nbsp; futuras</strong>. O n&atilde;o preenchimento dos campos obrigat&oacute;rios impede a inscri&ccedil;&atilde;o.</p>
+<p class="Default"><strong>3.8.2 </strong>Anexar ao <strong>Formul&aacute;rio</strong> os seguintes documentos:</p>
+<p class="Default"><strong>a) Documento</strong> oficial <strong>com foto</strong> (RG ou Carteira de Motorista ou Passaporte) para a devida identifica&ccedil;&atilde;o e comprova&ccedil;&atilde;o da maioridade do candidato. Este documento deve ser anexado anteriormente, ao realizar o cadastro no site;</p>
+<p class="MsoNormal"><strong>b)</strong> <strong>Sinopse do piloto </strong>(formata&ccedil;&atilde;o: fonte Arial, tamanho 11; espa&ccedil;amento entre as linhas: 1,5; margens: normal - superior e inferior: 2,5 cm / esq e direita: 3 cm; n&uacute;mero de p&aacute;ginas: at&eacute; 5; arquivo PDF);</p>
+<p class="Default"><strong>c) Termo de </strong><strong>Responsabilidade </strong>(<a title="Termo de responsabilidade" href="../../..static/docs/TermoResponsabilidadeLAB2020.pdf">conforme modelo aqui</a>) datado e assinado pelo mesmo;</p>
+<p><strong>d) Curr&iacute;culo</strong> do/a(s) roteirista(s);</p>
+<p class="Default"><strong>e)</strong>&nbsp;<strong>Comprovante ou protocolo de Registro na Biblioteca Nacional </strong>(opcional);</p>
+<p class="Default"><strong>f)</strong>&nbsp;<strong>Documento que comprove a libera&ccedil;&atilde;o dos direitos</strong>, em caso de adapta&ccedil;&atilde;o de obra de outro autor.</p>
+<p class="MsoNormal"><strong>g)</strong> <strong>Carta de autoriza&ccedil;&atilde;o do(s) coautor(es) </strong>(<a title="Autoriza&ccedil;&atilde;o co-autor" href="../../..static/docs/Autoriza&ccedil;&atilde;oCoautorLab2020.pdf">conforme modelo aqui</a>), datada e assinada pelo(s) mesmo(s), caso se aplique.</p>
+<p class="Default"><strong>3.9 </strong>Documenta&ccedil;&atilde;o incompleta, fora do padr&atilde;o solicitado e/ou enviada ap&oacute;s o encerramento do prazo de inscri&ccedil;&otilde;es desclassifica a inscri&ccedil;&atilde;o.</p>
+<p class="Default"><strong>3.10 </strong>A organiza&ccedil;&atilde;o do<strong> IV ROTA</strong> se reserva o direito de prorrogar o prazo de inscri&ccedil;&otilde;es, conforme julgue adequado, anunciando tal informa&ccedil;&atilde;o em seus canais de comunica&ccedil;&atilde;o.</p>
+<p class="Default"><strong>3.11 </strong>A organiza&ccedil;&atilde;o do <strong>IV ROTA</strong> n&atilde;o se responsabiliza por quaisquer despesas referentes &agrave; participa&ccedil;&atilde;o de roteiristas neste <strong>Laborat&oacute;rio</strong>.</p>
+<p class="Default"><strong>3.12 </strong>A organiza&ccedil;&atilde;o do <strong>IV ROTA</strong> n&atilde;o se responsabiliza pelas consequ&ecirc;ncias de quaisquer informa&ccedil;&otilde;es inver&iacute;dicas que venham a ser apresentadas por roteiristas participantes deste <strong>Laborat&oacute;rio</strong>, reservando-se a prerrogativa de desclassificar, a qualquer momento, os respons&aacute;veis por quaisquer infra&ccedil;&otilde;es do presente Regulamento.</p>
+<p class="MsoNormal"><strong>3.13 </strong>Ao inscrever seu(s) Projeto(s), o roteirista afirma anu&ecirc;ncia e concord&acirc;ncia com os termos constantes deste <strong>Regulamento</strong>, afirmando ainda que todas as informa&ccedil;&otilde;es fornecidas &agrave; organiza&ccedil;&atilde;o do <strong>IV ROTA</strong> por ocasi&atilde;o dessa inscri&ccedil;&atilde;o s&atilde;o verdadeiras.</p>
+<p class="Default"><strong>4. PROCESSO SELETIVO</strong></p>
+<p class="Default"><strong>4.1 Habilita&ccedil;&atilde;o</strong>: nesta etapa ser&atilde;o verificadas se todas as informa&ccedil;&otilde;es e documentos obrigat&oacute;rios foram enviados. Se estiver habilitado, o inscrito receber&aacute; um e-mail confirmando a habilita&ccedil;&atilde;o em at&eacute; 15 dias ap&oacute;s o final do per&iacute;odo de inscri&ccedil;&otilde;es.</p>
+<p class="Default"><strong>4.1.1 </strong>Apenas os Projetos habilitados passar&atilde;o para a etapa de Sele&ccedil;&atilde;o e ser&atilde;o avaliados.</p>
+<p class="Default"><strong>4.2 Sele&ccedil;&atilde;o</strong>: realizada em duas etapas. Na primeira etapa uma Comiss&atilde;o de <strong>Curadores</strong> irá eleger 20 (vinte) Projetos<strong> Semifinalistas</strong>. Na segunda etapa, outra Comiss&atilde;o de <strong>Curadores</strong> eleger&aacute; os 10 (dez) Projetos<strong> Finalistas </strong>que receber&atilde;o as consultorias e apresentar&atilde;o o <strong>Pitching</strong> final para o <strong>J&uacute;ri</strong>.</p>
+<p class="Default"><strong>4.2.1 </strong>A <strong>Curadoria</strong> e o <strong>J&uacute;ri</strong> ser&atilde;o compostos por profissionais atuantes no mercado audiovisual, escolhidos pela organiza&ccedil;&atilde;o do <strong>IV ROTA</strong>.</p>
+<p class="Default"><strong>4.3 </strong>Os Projetos <strong>Semifinalistas</strong> e os <strong>Finalistas</strong> ser&atilde;o divulgados no site e nas p&aacute;ginas nas redes sociais do <strong>IV</strong> <strong>ROTA</strong> (Facebook, Instagram e Twitter), conforme cronograma abaixo:</p>
+<p class="Default">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Dia 04 de outubro de 2020 </strong>&ndash; <strong>Semifinalistas,</strong></p>
+<p class="Default">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Dia 06 de novembro de 2020 </strong>&ndash;<strong> Finalistas,</strong></p>
+<p class="Default">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Dia 29 de novembro de 2020 </strong>&ndash;<strong> Vencedores do Pitching </strong>(anunciado na Cerim&ocirc;nia de Encerramento do <strong>IV ROTA</strong>)</p>
+<p class="Default">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>4.4 </strong>A escolha dos Projetos Vencedores do <strong>Laborat&oacute;rio </strong>do<strong> IV ROTA</strong>, bem como dos Finalistas e Semifinalistas, ser&aacute; de exclusiva responsabilidade da <strong>Curadoria</strong> e do <strong>J&uacute;ri</strong> do <strong>Laborat&oacute;rio</strong>. Estas decis&otilde;es ser&atilde;o soberanas e irrecorr&iacute;veis.</p>
+<p class="MsoNormal"><strong>4.5 </strong>A organiza&ccedil;&atilde;o do <strong>IV ROTA </strong>reserva-se o direito de selecionar e premiar, <strong>ou n&atilde;o</strong>, quaisquer Projetos, conservando para si todas as prerrogativas referentes a esse processo de sele&ccedil;&atilde;o, <strong>inclusive a de n&atilde;o premiar </strong>ou <strong>selecionar os Projetos para quaisquer pr&ecirc;mios</strong>.</p>
+<p class="Default"><strong>5. CRIT&Eacute;RIOS DE AVALIA&Ccedil;&Atilde;O </strong></p>
+<p class="Default"><strong>5.1 </strong>Crit&eacute;rios de avalia&ccedil;&atilde;o dos roteiros:</p>
+<p class="MsoNormal">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Clareza do projeto</strong> - 2,5 pontos</p>
+<p class="MsoNormal">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Originalidade/inventividade</strong> - 2,5 pontos</p>
+<p class="MsoNormal">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Dom&iacute;nio do universo</strong> -&nbsp; 2,5 pontos</p>
+<p class="MsoNormal">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Constru&ccedil;&atilde;o de personagens</strong> -&nbsp; &nbsp;2,5 pontos</p>
+<p class="MsoNormal">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Relev&acirc;ncia/atualidade</strong> - ponto extra</p>
+<p class="Default"><strong>IMPORTANTE</strong>: qualquer Projeto que apresente conte&uacute;do com preconceito ou que incite &agrave; viol&ecirc;ncia estar&aacute; sujeito &agrave; imediata desclassifica&ccedil;&atilde;o.</p>
+<p class="Default"><strong>6. PREMIAÇÃO </strong></p>
+<p class="Default"><strong>6.1 </strong>Os 10 (dez) roteiros Finalistas concorrer&atilde;o aos seguintes pr&ecirc;mios: <strong>Melhor</strong> <strong>Pitching do J&uacute;ri Oficial</strong>, <strong>Segundo Melhor Pitching do J&uacute;ri Oficial</strong>, <strong>Terceiro Melhor Pitching do J&uacute;ri Oficial </strong>e<strong> Melhor Pitching do J&uacute;ri Popular.</strong></p>
+<p class="Default"><strong>6.1.1 </strong>Todos os 4 vencedores do<strong> Pitching </strong>receber&atilde;o um trof&eacute;u do <strong>IV ROTA</strong>.</p>
+<p class="Default"><strong>6.2 </strong>Outras premia&ccedil;&otilde;es paralelas poder&atilde;o ser criadas e ser&atilde;o divulgadas atrav&eacute;s do site e das p&aacute;ginas do <strong>IV ROTA</strong> no Facebook, Instagram e Twitter.</p>
+<p class="Default"><strong>7. CONTRAPARTIDA </strong></p>
+<p class="Default"><strong>7.1 </strong>Como contrapartida é exigida a <strong>inclusão da logomarca do IV ROTA nos créditos de abertura e de encerramento do filme que venha a ser produzido a partir de um projeto premiado</strong>, assim como a <strong>inserção da mesma logomarca nas edi&ccedil;ões impressas de roteiros premiados </strong>que venham a ser publicados, comercialmente ou não.</p>
+<p class="Default"><strong>8. CONTATOS </strong></p>
+<p class="Default"><strong>8.1 </strong>D&uacute;vidas decorrentes do presente regulamento dever&atilde;o ser encaminhadas ao e-mail: <strong>rotalab2020@gmail.com</strong></p>
+<p class="MsoNormal"><strong>8.2 </strong>Para acompanhar as not&iacute;cias do <strong>IV ROTA</strong> acesse:</p>
+<p>Facebook:&nbsp; <a title="https://www.facebook.com/rotafestival/" href="https://www.facebook.com/rotafestival/" target="_blank" rel="noopener">https://www.facebook.com/rotafestival/</a> <br />Site:&nbsp; <a title="www.rotafestival.com" href="http://www.rotafestival.com" target="_blank" rel="noopener">http://rotafestival.com</a> <br />Instagram:&nbsp; <a title="https://www.instagram.com/rotafestival/" href="https://www.instagram.com/rotafestival/" target="_blank" rel="noopener">@rotafestival</a> <br />Twitter: <a title="@rotafestival" href="https://twitter.com/rotafestival" target="_blank" rel="noopener">@rotafestival</a></p>
+          </div>
+          <div class="showRegulation">
+            Ver mais...
+          </div>
+          <div class="hideRegulation">Fechar</div>
+        </div>
+        <div class="fade"></div>
+      
+
+      
+        <h4 id="h4_inscricao">Inscrição</h4>
+      
+
+      
+        <div style="font-size:18px;text-align:center">
+          
+            Inscrições abertas de 27 de julho a 01 de setembro de 2020!
+          
+        </div>
+
+      
+
+    </div>
+
+  </div>
+
+  <div>
+    <div class="box-payment" style="display: none;">
+      <strong>Regulamento</strong>
+      <div class="regulation clearP small">
+        <p class="MsoNormal"><strong>1. OBJETIVO </strong></p>
+<p class="MsoNormal"><strong>1.1 </strong>O&nbsp;<strong>Laborat&oacute;rio de Projetos de S&eacute;rie</strong> do<strong> IV ROTA - Festival de Roteiro Audiovisual </strong>tem o objetivo de valorizar, qualificar e premiar bons Projetos de S&eacute;ries de <strong>fic&ccedil;&atilde;o</strong> escritos por&nbsp;<strong>estudantes</strong>&nbsp;e&nbsp;<strong>iniciantes</strong><strong>*</strong>, contribuindo com seu desenvolvimento e abrindo portas para sua realiza&ccedil;&atilde;o.</p>
+<p class="Default"><strong>1.1.1</strong> Aceita-se a participa&ccedil;&atilde;o de <strong>estudantes</strong> e <strong>iniciantes</strong> maiores de idade desde que <strong>tenham</strong> <strong>no m&aacute;ximo</strong> <strong>03 (tr&ecirc;s) roteiros de curtas-metragens </strong>filmados e exibidos em festival, mostra de cinema ou na web em plataformas de streaming, <strong>n&atilde;o podendo ter nenhum roteiro de longa ou s&eacute;rie </strong>j&aacute; exibido em festival, mostra de cinema ou na web em plataformas de streaming, o que dever&aacute; ser atestado atrav&eacute;s do <strong>Termo de Responsabilidade </strong>preenchido, assinado e anexado pelo concorrente no ato da inscri&ccedil;&atilde;o.</p>
+<p class="MsoListParagraph"><strong>1.2</strong> O <strong>Laborat&oacute;rio</strong> compreende <strong>consultorias</strong> com 4 profissionais reconhecidos, e um <strong>Pitching </strong>final para um <strong>J&uacute;ri</strong> convidado pelo Festival. Tanto as consultorias quanto o <strong>Pitching</strong> ser&atilde;o sobre o Projeto de S&eacute;rie inscrito na presente sele&ccedil;&atilde;o.</p>
+<p class="MsoListParagraph">&nbsp;</p>
+<p class="Default"><strong>2. DATA E LOCAL </strong></p>
+<p class="Default"><strong>2.1 </strong>As consultorias do <strong>Laborat&oacute;rio </strong>acontecer&atilde;o nos dias <strong>25 e 26 de novembro de 2020</strong>. O <strong>Pitching do Laborat&oacute;rio</strong> acontecer&aacute; no dia <strong>29 de novembro de 2020</strong>.</p>
+<p class="Default"><strong>2.2 </strong>Tanto as <strong>Consultorias </strong>quanto o<strong> Pitching </strong>do<strong> Laborat&oacute;rio</strong> acontecer&atilde;o on line atrav&eacute;s da <strong>ferramenta de v&iacute;deo confer&ecirc;ncia Zoom Meeting</strong>.</p>
+<p class="Default"><strong>2.3 </strong>&Eacute; <strong>imprescind&iacute;vel</strong> que os selecionados para o <strong>Laborat&oacute;rio</strong> tenham disponibilidade para estar presentes virtualmente nos dias <strong>25, 26 e 29 de novembro de 2020</strong>. Caso o selecionado n&atilde;o possa comparecer em qualquer um dos dias, tanto das <strong>Consultorias</strong> quanto do <strong>Pitching</strong>, deve avisar &agrave; organiza&ccedil;&atilde;o do Festival e ser&aacute; substitu&iacute;do por um suplente.</p>
+<p class="Default">&nbsp;</p>
+<p class="MsoNormal"><strong>3. INSCRI&Ccedil;&Otilde;ES</strong></p>
+<p><strong>3.1</strong>&nbsp;Os participantes inscritos no <strong>Combo</strong>&nbsp;t&ecirc;m o direito de inscrever&nbsp;<span style="background-color: #ffffff;">at&eacute; 3 (tr&ecirc;s) projetos para o Encontro de Neg&oacute;cios e/ou para o Laborat&oacute;rio de Projetos de S&eacute;ries</span>. Aqueles que desejam participar com <strong>mais de 3 (tr&ecirc;s) projetos</strong> devem fazer, al&eacute;m da inscri&ccedil;&atilde;o no <strong>Combo</strong>, a <strong>Inscri&ccedil;&atilde;o Avulsa</strong> de cada um dos demais Projetos, nos termos previstos no item <strong>3.2</strong>.</p>
+<p><strong>3.2</strong> A <strong>Inscri&ccedil;&atilde;o Avulsa</strong> no <strong>Laborat&oacute;rio </strong>poder&aacute; ser utilizada tanto pelos participantes do <strong>Combo </strong>que se interessarem em inscrever mais de 3 (tr&ecirc;s) projetos, quanto por quem n&atilde;o for se inscrever no Combo.</p>
+<p><strong>3.3</strong> N&atilde;o h&aacute; limite de inscri&ccedil;&atilde;o de Projetos por autor.</p>
+<p><strong>3.4 </strong>A inscri&ccedil;&atilde;o, feita mediante pagame<span style="background-color: #ffffff;">nto, estar&aacute; aberta a partir das<strong>&nbsp;</strong><strong>00h00 do dia 27 de julho</strong> <strong>at&eacute; as 23h59 do dia 1&ordm; de setembro de 2020.</strong></span></p>
+<p class="MsoNormal"><strong>3.5</strong>&nbsp;Estão habilitados a se inscrever roteiristas&nbsp;<strong>estudantes</strong>&nbsp;e&nbsp;<strong>iniciantes brasileiros </strong><strong>ou naturalizados, residentes ou n&atilde;o no Brasil,</strong> <strong>maiores de 18 anos</strong>.</p>
+<p class="MsoNormal"><strong>3.6</strong>&nbsp;O <strong>IV ROTA </strong>aceita inscri&ccedil;&otilde;es de projetos escritos em outras l&iacute;nguas que n&atilde;o o portugu&ecirc;s, desde que estejam inteiramente traduzidos para o portugu&ecirc;s a fim de que possam ser avaliados.</p>
+<p class="MsoNormal"><strong>3.</strong><strong>7</strong>&nbsp;Para cada Projeto será contabilizada uma nova inscri&ccedil;ão.</p>
+<p class="MsoNormal"><strong>3.8</strong>&nbsp;A inscri&ccedil;&atilde;o neste <strong>Laborat&oacute;rio</strong> dar-se-&aacute; atrav&eacute;s do seguinte processo:</p>
+<p class="Default"><strong>3.8.1 </strong>Preencher o <strong>Formul&aacute;rio de Inscri&ccedil;&atilde;o do Laborat&oacute;rio </strong>por completo com <strong>T&iacute;tulo, G&ecirc;nero, Logline, N&uacute;mero de epis&oacute;dios, Tipo ou Formato, Conceito da s&eacute;rie, Arco da/o protagonista, Universo, Personagens principais, Arco da temporada 1 e Temporadas&nbsp; futuras</strong>. O n&atilde;o preenchimento dos campos obrigat&oacute;rios impede a inscri&ccedil;&atilde;o.</p>
+<p class="Default"><strong>3.8.2 </strong>Anexar ao <strong>Formul&aacute;rio</strong> os seguintes documentos:</p>
+<p class="Default"><strong>a) Documento</strong> oficial <strong>com foto</strong> (RG ou Carteira de Motorista ou Passaporte) para a devida identifica&ccedil;&atilde;o e comprova&ccedil;&atilde;o da maioridade do candidato. Este documento deve ser anexado anteriormente, ao realizar o cadastro no site;</p>
+<p class="MsoNormal"><strong>b)</strong> <strong>Sinopse do piloto </strong>(formata&ccedil;&atilde;o: fonte Arial, tamanho 11; espa&ccedil;amento entre as linhas: 1,5; margens: normal - superior e inferior: 2,5 cm / esq e direita: 3 cm; n&uacute;mero de p&aacute;ginas: at&eacute; 5; arquivo PDF);</p>
+<p class="Default"><strong>c) Termo de </strong><strong>Responsabilidade </strong>(<a title="Termo de responsabilidade" href="../../..static/docs/TermoResponsabilidadeLAB2020.pdf">conforme modelo aqui</a>) datado e assinado pelo mesmo;</p>
+<p><strong>d) Curr&iacute;culo</strong> do/a(s) roteirista(s);</p>
+<p class="Default"><strong>e)</strong>&nbsp;<strong>Comprovante ou protocolo de Registro na Biblioteca Nacional </strong>(opcional);</p>
+<p class="Default"><strong>f)</strong>&nbsp;<strong>Documento que comprove a libera&ccedil;&atilde;o dos direitos</strong>, em caso de adapta&ccedil;&atilde;o de obra de outro autor.</p>
+<p class="MsoNormal"><strong>g)</strong> <strong>Carta de autoriza&ccedil;&atilde;o do(s) coautor(es) </strong>(<a title="Autoriza&ccedil;&atilde;o co-autor" href="../../..static/docs/Autoriza&ccedil;&atilde;oCoautorLab2020.pdf">conforme modelo aqui</a>), datada e assinada pelo(s) mesmo(s), caso se aplique.</p>
+<p class="Default"><strong>3.9 </strong>Documenta&ccedil;&atilde;o incompleta, fora do padr&atilde;o solicitado e/ou enviada ap&oacute;s o encerramento do prazo de inscri&ccedil;&otilde;es desclassifica a inscri&ccedil;&atilde;o.</p>
+<p class="Default"><strong>3.10 </strong>A organiza&ccedil;&atilde;o do<strong> IV ROTA</strong> se reserva o direito de prorrogar o prazo de inscri&ccedil;&otilde;es, conforme julgue adequado, anunciando tal informa&ccedil;&atilde;o em seus canais de comunica&ccedil;&atilde;o.</p>
+<p class="Default"><strong>3.11 </strong>A organiza&ccedil;&atilde;o do <strong>IV ROTA</strong> n&atilde;o se responsabiliza por quaisquer despesas referentes &agrave; participa&ccedil;&atilde;o de roteiristas neste <strong>Laborat&oacute;rio</strong>.</p>
+<p class="Default"><strong>3.12 </strong>A organiza&ccedil;&atilde;o do <strong>IV ROTA</strong> n&atilde;o se responsabiliza pelas consequ&ecirc;ncias de quaisquer informa&ccedil;&otilde;es inver&iacute;dicas que venham a ser apresentadas por roteiristas participantes deste <strong>Laborat&oacute;rio</strong>, reservando-se a prerrogativa de desclassificar, a qualquer momento, os respons&aacute;veis por quaisquer infra&ccedil;&otilde;es do presente Regulamento.</p>
+<p class="MsoNormal"><strong>3.13 </strong>Ao inscrever seu(s) Projeto(s), o roteirista afirma anu&ecirc;ncia e concord&acirc;ncia com os termos constantes deste <strong>Regulamento</strong>, afirmando ainda que todas as informa&ccedil;&otilde;es fornecidas &agrave; organiza&ccedil;&atilde;o do <strong>IV ROTA</strong> por ocasi&atilde;o dessa inscri&ccedil;&atilde;o s&atilde;o verdadeiras.</p>
+<p class="Default"><strong>4. PROCESSO SELETIVO</strong></p>
+<p class="Default"><strong>4.1 Habilita&ccedil;&atilde;o</strong>: nesta etapa ser&atilde;o verificadas se todas as informa&ccedil;&otilde;es e documentos obrigat&oacute;rios foram enviados. Se estiver habilitado, o inscrito receber&aacute; um e-mail confirmando a habilita&ccedil;&atilde;o em at&eacute; 15 dias ap&oacute;s o final do per&iacute;odo de inscri&ccedil;&otilde;es.</p>
+<p class="Default"><strong>4.1.1 </strong>Apenas os Projetos habilitados passar&atilde;o para a etapa de Sele&ccedil;&atilde;o e ser&atilde;o avaliados.</p>
+<p class="Default"><strong>4.2 Sele&ccedil;&atilde;o</strong>: realizada em duas etapas. Na primeira etapa uma Comiss&atilde;o de <strong>Curadores</strong> irá eleger 20 (vinte) Projetos<strong> Semifinalistas</strong>. Na segunda etapa, outra Comiss&atilde;o de <strong>Curadores</strong> eleger&aacute; os 10 (dez) Projetos<strong> Finalistas </strong>que receber&atilde;o as consultorias e apresentar&atilde;o o <strong>Pitching</strong> final para o <strong>J&uacute;ri</strong>.</p>
+<p class="Default"><strong>4.2.1 </strong>A <strong>Curadoria</strong> e o <strong>J&uacute;ri</strong> ser&atilde;o compostos por profissionais atuantes no mercado audiovisual, escolhidos pela organiza&ccedil;&atilde;o do <strong>IV ROTA</strong>.</p>
+<p class="Default"><strong>4.3 </strong>Os Projetos <strong>Semifinalistas</strong> e os <strong>Finalistas</strong> ser&atilde;o divulgados no site e nas p&aacute;ginas nas redes sociais do <strong>IV</strong> <strong>ROTA</strong> (Facebook, Instagram e Twitter), conforme cronograma abaixo:</p>
+<p class="Default">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Dia 04 de outubro de 2020 </strong>&ndash; <strong>Semifinalistas,</strong></p>
+<p class="Default">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Dia 06 de novembro de 2020 </strong>&ndash;<strong> Finalistas,</strong></p>
+<p class="Default">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Dia 29 de novembro de 2020 </strong>&ndash;<strong> Vencedores do Pitching </strong>(anunciado na Cerim&ocirc;nia de Encerramento do <strong>IV ROTA</strong>)</p>
+<p class="Default">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>4.4 </strong>A escolha dos Projetos Vencedores do <strong>Laborat&oacute;rio </strong>do<strong> IV ROTA</strong>, bem como dos Finalistas e Semifinalistas, ser&aacute; de exclusiva responsabilidade da <strong>Curadoria</strong> e do <strong>J&uacute;ri</strong> do <strong>Laborat&oacute;rio</strong>. Estas decis&otilde;es ser&atilde;o soberanas e irrecorr&iacute;veis.</p>
+<p class="MsoNormal"><strong>4.5 </strong>A organiza&ccedil;&atilde;o do <strong>IV ROTA </strong>reserva-se o direito de selecionar e premiar, <strong>ou n&atilde;o</strong>, quaisquer Projetos, conservando para si todas as prerrogativas referentes a esse processo de sele&ccedil;&atilde;o, <strong>inclusive a de n&atilde;o premiar </strong>ou <strong>selecionar os Projetos para quaisquer pr&ecirc;mios</strong>.</p>
+<p class="Default"><strong>5. CRIT&Eacute;RIOS DE AVALIA&Ccedil;&Atilde;O </strong></p>
+<p class="Default"><strong>5.1 </strong>Crit&eacute;rios de avalia&ccedil;&atilde;o dos roteiros:</p>
+<p class="MsoNormal">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Clareza do projeto</strong> - 2,5 pontos</p>
+<p class="MsoNormal">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Originalidade/inventividade</strong> - 2,5 pontos</p>
+<p class="MsoNormal">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Dom&iacute;nio do universo</strong> -&nbsp; 2,5 pontos</p>
+<p class="MsoNormal">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Constru&ccedil;&atilde;o de personagens</strong> -&nbsp; &nbsp;2,5 pontos</p>
+<p class="MsoNormal">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Relev&acirc;ncia/atualidade</strong> - ponto extra</p>
+<p class="Default"><strong>IMPORTANTE</strong>: qualquer Projeto que apresente conte&uacute;do com preconceito ou que incite &agrave; viol&ecirc;ncia estar&aacute; sujeito &agrave; imediata desclassifica&ccedil;&atilde;o.</p>
+<p class="Default"><strong>6. PREMIAÇÃO </strong></p>
+<p class="Default"><strong>6.1 </strong>Os 10 (dez) roteiros Finalistas concorrer&atilde;o aos seguintes pr&ecirc;mios: <strong>Melhor</strong> <strong>Pitching do J&uacute;ri Oficial</strong>, <strong>Segundo Melhor Pitching do J&uacute;ri Oficial</strong>, <strong>Terceiro Melhor Pitching do J&uacute;ri Oficial </strong>e<strong> Melhor Pitching do J&uacute;ri Popular.</strong></p>
+<p class="Default"><strong>6.1.1 </strong>Todos os 4 vencedores do<strong> Pitching </strong>receber&atilde;o um trof&eacute;u do <strong>IV ROTA</strong>.</p>
+<p class="Default"><strong>6.2 </strong>Outras premia&ccedil;&otilde;es paralelas poder&atilde;o ser criadas e ser&atilde;o divulgadas atrav&eacute;s do site e das p&aacute;ginas do <strong>IV ROTA</strong> no Facebook, Instagram e Twitter.</p>
+<p class="Default"><strong>7. CONTRAPARTIDA </strong></p>
+<p class="Default"><strong>7.1 </strong>Como contrapartida é exigida a <strong>inclusão da logomarca do IV ROTA nos créditos de abertura e de encerramento do filme que venha a ser produzido a partir de um projeto premiado</strong>, assim como a <strong>inserção da mesma logomarca nas edi&ccedil;ões impressas de roteiros premiados </strong>que venham a ser publicados, comercialmente ou não.</p>
+<p class="Default"><strong>8. CONTATOS </strong></p>
+<p class="Default"><strong>8.1 </strong>D&uacute;vidas decorrentes do presente regulamento dever&atilde;o ser encaminhadas ao e-mail: <strong>rotalab2020@gmail.com</strong></p>
+<p class="MsoNormal"><strong>8.2 </strong>Para acompanhar as not&iacute;cias do <strong>IV ROTA</strong> acesse:</p>
+<p>Facebook:&nbsp; <a title="https://www.facebook.com/rotafestival/" href="https://www.facebook.com/rotafestival/" target="_blank" rel="noopener">https://www.facebook.com/rotafestival/</a> <br />Site:&nbsp; <a title="www.rotafestival.com" href="http://www.rotafestival.com" target="_blank" rel="noopener">http://rotafestival.com</a> <br />Instagram:&nbsp; <a title="https://www.instagram.com/rotafestival/" href="https://www.instagram.com/rotafestival/" target="_blank" rel="noopener">@rotafestival</a> <br />Twitter: <a title="@rotafestival" href="https://twitter.com/rotafestival" target="_blank" rel="noopener">@rotafestival</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  window.formSent = false;
+  $(document).ready(function(){
+    
+    
+
+    $('#subscription_form').submit(function(){
+      if (!window.formSent){
+        let submit = $(this).find('input[type=submit]');
+        submit[0].disabled = true;
+        window.formSent = true;
+        submit.attr('class', 'btn grey');
+        submit.val('Aguarde, enviando...');
+      }
+    });
+
+    $('.regulation > a').click(function(){
+      if ($(this).hasClass('visible')){
+        $(this).removeClass('visible');
+        $(this).text('ver regulamento');
+        $('.regulation .text').hide();
+      } else {
+        $(this).addClass('visible');
+        $(this).text('esconder regulamento');
+        $('.regulation .text').show();
+      }
+    });
+
+    $(".showRegulation").click( function () {
+      $(".hideRegulation").show();
+      $(this).hide().parent().css({
+        height: "auto"
+      });
+    });
+
+    $(".hideRegulation").click( function () {
+      $(".showRegulation").show();
+      $(this).hide().parent().css({
+        height: "390px"
+      });
+    });
+
+    $('.charCounter').each(function(n, el){
+      let input = $(el).find('.input > *');
+      let maxLength = input.attr('maxlength');
+      let label = $('<span class="counter">');
+      label.appendTo($(el));
+      input.keyup(function(){
+        let n = $(this).val().length;
+        label.text((maxLength - n) + ' caracteres restantes');
+      });
+      input.keydown(function(){
+        $(this).keyup();
+      });
+      input.keyup();
+    });
+  });
+
+</script>
+
+        </div>
+      </div>
+
+      <footer>
+        <div class="content">
+          © 2020 ROTA | Festival de Roteiro Audiovisual - Todos os direitos reservados
+        </div>
+      </footer>
+
+    </main>
+
+    <script>
+      window.mobileMenuOpen = false;
+
+      $(document).ready(function(){
+        window.menuFixed = false;
+
+        $(window).scroll(function(){
+          if (window.scrollY > 85){
+            if (!window.menuFixed){
+              if (!window.mobileMenuOpen){
+                $('nav').addClass('fixed');
+                $('header').addClass('margin-bottom');
+                window.menuFixed = true;
+              }
+            }
+          } else {
+            if (window.menuFixed){
+              $('nav').removeClass('fixed');
+              $('header').removeClass('margin-bottom');
+              window.menuFixed = false;
+            }
+          }
+        });
+
+        $('#mobile-menu').click(function(){
+          if (!window.mobileMenuOpen){
+            $('nav').css({'left': '0%'});
+            $('nav').removeClass('fixed');
+            $('header').removeClass('margin-bottom');
+          } else {
+            $('nav').css({'left': '100%'});
+          }
+          window.mobileMenuOpen = !window.mobileMenuOpen;
+        });
+      });
+
+      window.scroll();
+
+      $(document).ready(function(){
+        $('.ajaxForm').submit(function(ev){
+          ev.preventDefault();
+          let btn = $(this).find('button[type=submit]');
+          let originalText = btn.text();
+          btn.text('Aguarde, enviando...');
+          btn.addClass('grey').removeClass('action').attr('disabled', true);
+          $(this).find('.errorlist.ajaxForm').remove();
+
+          $.getJSON({
+            url: $(this).attr('action'),
+            method: $(this).attr('method'),
+            data: $(this).serialize(),
+            success: function(r){
+              btn.removeClass('grey').addClass('action').attr('disabled', false);
+              btn.text(originalText);
+
+              if (r.error){
+                let _err = '<ul class="errorlist ajaxForm"><li class="t">ERRO';
+                _err += '</li><li class="r"></li></ul>';
+                let err = $(_err);
+                err.find('.r').text(r.error);
+                btn.before(err);
+              } else {
+                $(this)[0].onSuccess(r);
+              }
+            }.bind(this)
+          });
+        });
+      });
+
+    </script>
+
+
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173626616-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173626616-1');
+      </script>
+    
+
+  </body>
+</html>

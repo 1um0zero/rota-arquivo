@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="http://www.rotafestival.com">
+    <meta property="og:title" content="ROTA | Festival de Roteiro Audiovisual">
+    <meta property="og:image" content="static/core/img/logo_2020.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="static/core/css/reset.min.css">
+    <link rel="stylesheet" href="static/core/css/main.min.css?v=2.2">
+    <link rel="stylesheet" href="static/core/css/common.css">
+    <link rel="stylesheet" href="static/core/fontawesome-free-5.15.1-web/css/all.css">
+    
+    <script src="static/core/js/jquery-3.4.1.min.js"></script>
+    <script src="static/core/js/jquery.mask.min.js"></script>
+    <script src="static/core/js/common.js"></script>    
+    <title>ROTA | Festival de Roteiro Audiovisual</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content">
+          <a href="index.html" class="raw">
+             <img src="static/core/img/logo4.png" width="150">
+          </a>
+         
+          <a href="https://www.instagram.com/rotafestival" title="Rota no Instagram" target="_blank" class="btn" style="margin: 12px 40px 0 0; font-size: 200%; background-color:transparent;">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCFH1AJvRUHG2kQPG7ZyR8yQ" title="Rota no YouTube" target="_blank" class="btn" style="margin: 12px 0 0 0; font-size: 200%; background-color:transparent;">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.facebook.com/rotafestival" title="Rota no Facebook" target="_blank" class="btn" style="margin: 12px 0 0 0; font-size: 200%; background-color:transparent;">
+              <i class="fab fa-facebook-square"></i>
+          </a>
+        </div>
+      </header>
+  
+      <div id="mobile-menu" style="display:none"></div>
+
+      <nav>
+        <img src="static/core/img/logo5.png" width="150" id="mobile-menu-logo"
+          style="display:none">
+        <ul>
+          <li class="logo">
+            <a href="index.html">
+                <img src="static/core/img/logo4.png">
+            </a>
+          </li>
+          
+          <li class="">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="">
+            <a href="programacao.html">Programação</a>
+          </li>
+          
+          <li class="">
+            <a href="equipe.html">Equipe</a>
+          </li>
+          
+          <li class="">
+            <a href="concurso-de-roteiros-de-curtas.html">Concurso de Roteiros de Curtas</a>
+          </li>
+          
+          <li class="">
+            <a href="encontro-de-negocios.html">Encontro de Negócios</a>
+          </li>
+          
+          <li class="">
+            <a href="laboratorio-de-projetos-de-serie.html">Laboratório de Projetos de Série</a>
+          </li>
+          
+          <li class="">
+            <a href="mostra-competitiva-de-curtas.html">Mostra Competitiva de Curtas</a>
+          </li>
+          
+          <li class="">
+            <a href="seminario.html">Seminário</a>
+          </li>
+          
+        </ul>
+      </nav>
+
+      <div id="content">
+        
+        <div id="banner">
+          <div class="banner content">
+            <h1>Concurso de Roteiros de Curtas</h1>
+          </div>
+        </div>
+        
+
+        <div class="content min-height">
+          
+
+<style>
+  .box-payment {
+    border:1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 30px;
+    padding: 20px;
+  }
+  .col-duo.concurso {
+    grid-template-columns: 2fr 1fr;
+  }
+  .clearP p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .small {
+    font-size: 14px;
+  }
+  span.counter {
+    color: #666;
+    font-size: 12px;
+  }
+
+  @media (max-width: 1300px){
+    .col-duo.concurso {
+      grid-template-columns: 3fr 2fr;
+    }
+  }
+
+ul.convidados {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.convidados li {
+  width: calc(50% - 30px);
+}
+ul.convidados li:nth-child(odd) {
+  margin: 0 30px 0 0;
+}
+ul.convidados li p {
+  text-align: justify;
+  font-size: 13px;
+}
+ul.convidados li img {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 250px;
+}
+ul.convidados h2 {
+  margin-top: 10px;
+}
+ul.convidados h3 {
+  margin: 0 0 10px;
+  color: #666;
+}
+
+@media (max-width: 1024px){
+  ul.convidados {
+    margin: 5px;
+  }
+  ul.convidados h2 {
+    margin: 10px 5px 0 10px;
+  } 
+  ul.convidados h3 {
+    margin: 2px 0 5px 10px;
+  }
+  ul.convidados li {
+    width: 100%;
+  }
+  ul.convidados li:nth-child(odd) {
+    margin: 0;
+  }
+  ul.convidados li img {
+    width: 100%;
+  }
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+<input type="hidden" name="csrfmiddlewaretoken" value="QVs3bYrlCQzfzMAmBFvIqP4WbLTO5umndy2UnXJb1Y19juyBTnwMOBlarIEeJGYA">
+<div class="concurso">
+  <div>
+    
+    <div class="contest_image">
+      <div style="width: 100%; height: 400px; background: url(' static/core/img/banner-roteiros.jpg ');background-position:bottom"></div>
+    </div>
+    
+
+    <div class="menu_contest">
+      
+      
+        <div class="item_menu_contest">
+          <a href="javascript:regulamento()">Regulamento</a>
+        </div>
+      
+      
+        <div class="item_menu_contest">
+          <a href="javascript:convidados()">
+             Convidados
+            
+          </a>
+        </div>
+      
+      
+        <div class="item_menu_contest">
+          <a href="javascript:inscricao()">Inscrição</a>
+        </div>
+      
+    </div>
+
+    <div class="c contentDescription">
+        <br><br>
+        <strong>Vencedores</strong>
+        <br><br>
+        Melhor Roteiro – <strong>152 A/B</strong>, de Daniel Jaber
+        <br><br>
+        Melhor Diálogo – <strong>PRAZO DE VALIDADE</strong>, de Lucas Delfin
+        <br><br>
+        Melhor Personagem – <strong>A MULHER AOS MEUS PÉS</strong>, de Diego dos Anjos
+        <br><br>
+        Prêmio ROTA/CABÍRIA de Melhor Protagonista Feminina - <strong>A CASA É NOSSA</strong>, roteiro de Natália Borges Martins
+        <br><br>
+
+      <h4>Descrição</h4>
+      <div id="contest_description">
+        
+<p>O <strong>Concurso de Roteiro de Curtas-metragens</strong> tem o objetivo de promover, atrav&eacute;s de premia&ccedil;&atilde;o, roteiros de <strong>curtas de fic&ccedil;&atilde;o</strong> inscritos por<strong> estudantes e iniciantes</strong> e, assim, abrir portas para sua eventual realiza&ccedil;&atilde;o.</p>
+<p>Os roteiros concorrer&atilde;o nas seguintes categorias: <br />-<strong>melhor roteiro</strong>, <br />-<strong>melhor personagem</strong>, <br />-<strong>melhor di&aacute;logo</strong>, <br />-<strong>melhor protagonista feminina</strong> (certificado Cab&iacute;ria). <br /><br />Os roteiros ser&atilde;o avaliados em duas etapas: <br />Etapa 01: vinte curadores selecionar&atilde;o at&eacute; 30 roteiros indicados para as 3 categorias do pr&ecirc;mio: melhor roteiro, melhor personagem e melhor di&aacute;logo, e as indicadas para o Pr&ecirc;mio ROTA/Cab&iacute;ria de Melhor Protagonista Feminina.&nbsp;</p>
+<p>Etapa 02: cinco jurados do ROTA escolher&atilde;o os vencedores do concurso nas 3 categorias. E os jurados do Pr&ecirc;mio Cab&iacute;ria escolher&atilde;o a vencedora na categoria de Melhor Protagonista Feminina.</p>
+<p>Tanto a curadoria quanto o j&uacute;ri do concurso ser&atilde;o compostos por profissionais reconhecidos da &aacute;rea. Premia&ccedil;&atilde;o: al&eacute;m de trof&eacute;us, o <strong>Concurso de Roteiros de Curtas do IV ROTA</strong> premiar&aacute; seus vencedores com consultorias, oficinas e tradu&ccedil;&otilde;es oferecidas pelos parceiros do Festival.</p>
+<p>Para a edi&ccedil;&atilde;o do IV ROTA s&atilde;o esperadas novas parcerias e premia&ccedil;&otilde;es.</p>
+<p>D&uacute;vidas e sugest&otilde;es? Envie email para <strong>rotaconcurso2020@gmail.com</strong>.</p>      
+
+      </div>
+
+      
+      
+        
+          <h4 id="h4_convidados">Convidados</h4>
+        
+        
+        <ul class="convidados">
+          
+          <li>
+            <div class="block">
+              <h2>ADRIANA JUNGBLUTH</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/673264e8-595c-4d39-b94d-c88698cef531.jpg">
+                
+                Roteirista e Escritora, natural de Jundiaí - SP. Estudou Roteiro na EICTV em Cuba, na AIC-RIO e PUC-RIO. Foi curadora do Concurso de Roteiros de Curta do ROTA em 2019. Seu projeto de longa-metragem infantil foi selecionado pelo Edital PROAC de desenvolvimento de roteiro. Escreveu e produziu o curta metragem “Maybe just the plant”, filmado em 2018 em Berlim, na Alemanha, e exibido no festival Zeitimpuls Shortfilm em Viena. Atualmente é Pós-graduanda em Cinema na Faculdade de Belas Artes de SP. Tem um livro publicado (Uma Lenda Japonesa) e participou de duas antologias em 2020.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>ANA DO CARMO</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/3a595946-678d-4913-bff7-3eebc2000234.jpg">
+                
+                Ana do Carmo é diretora e roteirista baiana, co-fundadora da Saturnema Filmes, integrante da Gran Maître Filmes, coordenadora audiovisual do projeto Lendo Mulheres Negras, associada à APAN, membra do Black Femme Supremacy Film Festival (EUA) e membra da OBS - Organization of Black Screenwriters (EUA). Dirigiu e roteirizou 7 curtas selecionados para festivais nacionais e internacionais, dentre eles a Short Film Corner do Festival de Cannes; foi vencedora do Festival do Minuto; finalista em 5 categorias no Fest Cine Pedra Azul; semi-finalista no Dumbo Film Festival (EUA); premiada pelo edital Arte Como Respiro do Itaú Cultural; selecionada para as turnês de curta-metragem Taste Test 2020 (EUA) e Femme Frontera Filmmaker Showcase (EUA); e selecionada para os labs de roteiro PanLab 2019 (BA), GranLab 2020 (BA), Usina do Drama 2020 (BA), Sundance Collab (EUA) e Frapa 2020 (RS), onde é finalista com seu primeiro roteiro de longa metragem.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>ARIEL L. DIBERNACI</h2>
+              <h3>Curador</h3>
+              <p>
+                
+                  <img src="static/convidados/e7a9fa53-9ff6-4f62-b04e-8f31c8690e6e.jpg">
+                
+                Diretor, roteirista e oficineiro baiano, graduado em Produção em Tecnologia Audiovisual pelo Centro Universitário Jorge Amado, co-fundador da Saturnema Filmes e integrante da Gran Maître Filmes. Dirigiu e roteirizou os curtas-metragens: Cantos dessa Cidade (2016), Lobo do Homem (2017); Exposição (2017); Objeto de Cena (2017); Ponta de Lança (2017); De Amando a Paulo Isidoro (2018); A 7 Tragos do Chão (2019) e Tubarão de Água Doce (2020). Foi oficineiro na II Mostra Itinerante de Cinemas Negros Mohamed Bamba e na III Mostra Sesc de Cinema; foi finalista no concurso DirecTV Cinema+ da SKY; semifinalista do Dumbo Film Festival (Nova York); vencedor do Festival do Minuto; é co-roteirista da série "Fúcsia", selecionada para o laboratório de roteiro Usina do Drama 2020 (BA); e é co-roteirista do roteiro de curta-metragem "Eu, o Homem de Barro", selecionado para o Crafting Your Short Film - Sundance Collab (EUA). Atualmente está desenvolvendo seu primeiro roteiro de longa-metragem. Ariel também é diretor de fotografia e montador, tendo atuado em mais de 30 produções no cenário independente baiano.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>CARLOS KAMARA</h2>
+              <h3>Curador</h3>
+              <p>
+                
+                  <img src="static/convidados/7c671e40-ff81-433b-9807-c765b244e7ac.jpg">
+                
+                Nascido em Orobó, cidade do agreste pernambucano, formado em Letras, começou sua carreira cinematográfica a partir de 2011, participando em produções locais do estado de Pernambuco, como o longa metragem O PERFUME DELAS, de Jorge de Souza. Kamara é um dos impulsionadores do audiovisual no agreste pernambucano e já soma em seu currículo seis curtas metragens, dentre eles com destaque para SOB O DELÍRIO DE AGOSTO, co-dirigido por Karla Ferreira, que ganhou 14 prêmios em festivais. Além de roteirista e cineasta, é produtor, curador e coordenador de duas mostras de cinema: OROCINE - MOSTRA OROBÓ DE CINEMA e PERIFÉRICA - MOSTRA DE CINEMA DE CAMARAGIBE. Ele faz parte do Setorial Audiovisual do Agreste e foi membro do Conselho Consultivo do Audiovisual de Pernambuco. Filmes: Toque (fic.2013) - direção, O Quarto Branco (fic.2016) - roteiro e direção, Arena (doc.2017) - roteiro e direção, Sob o Delírio de Agosto (fic.2013) - roteiro e direção, Alvorada (doc.2019) - roteiro e direção e O Quarto Negro (fic.2019) - roteiro e direção.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>CAROL SANTOIAN</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/ca50a3a0-f3e9-43c8-af3d-0fdde878431a.jpg">
+                
+                Roteirista formada pela Escola de Cinema Darcy Ribeiro, pós-graduada em Roteiro para Cinema, TV, WEB e Multiplataformas pela UVA e Bacharel em História pela Universidade Federal do Estado do Rio de Janeiro (UNIRIO). Na televisão, trabalhou como assistente de produção do programa Cara & Coroa da TV Brasil e como editora de imagem nos principais jornais da TV Globo. Roteirizou, produziu e editou o curta doc “Os Paraíba da Feira” (2018). Atualmente trabalha com criação de conteúdo para internet e mantém um canal no Youtube especializado em narrativa audiovisual.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>CAROL VILAMARO</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/74f200bf-7086-4a94-acf3-4157caae9bd7.jpg">
+                
+                Nascida e criada em Nova Iguaçu/RJ, Bacharel em Jornalismo formada pela Faculdade Pinheiro Guimarães, com especialização em cinema (Escola de Cinema Darcy Ribeiro), produção audiovisual (Escola Cinema Nosso) e fotografia (SENAC). Já foi diretora, produtora, creative creator, colaboradora e fotógrafa de diversos filmes e eventos. É uma das realizadoras do movimento #BaixadaFilma, um movimento que começou com um manifesto pela territorialização dos orçamentos no Audiovisual para a Baixada Fluminense. Criadora da Laranja Vulcânica, um selo de produções independentes da Baixada Fluminense. Atualmente trabalha com tradução e legendagem para produtos audiovisuais como filmes, videos e peças institucionais. Seu trabalho criativo também gira em torno do feminino na arte enquanto resistência e construção de afetos com o território da Baixada Fluminense. Sempre gostou de escrever, fotografar e contar histórias. Seu trabalho é 100% autoral e não acredita em nada que seja feito sem afeto.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>E. M. Z. CAMARGO</h2>
+              <h3>Curador</h3>
+              <p>
+                
+                  <img src="static/convidados/4b2fb46a-dfb7-4361-92a6-44f37040c1f7.jpg">
+                
+                Roteirista, produtor e diretor, E. M. Z. Camargo estreou com o premiado curta-metragem “Palhaços Anônimos” (2015), realizou o documentário “Fora da Caixa” (2017), premiado no Brasil, na Argentina e na Bolívia, o curta de ficção “Luto” (2017), premiado Melhor Filme no FAM (SC), e o curta de animação “Vivi Lobo e o Quarto Mágico” (2019), que recebeu 10 prêmios nacionais e internacionais. É produtor da animação “Apneia” (2019), premiada Melhor Curta Brasileiro no Festival de Gramado (RS), que recebeu o Prêmio da Crítica no Anima Mundi (RJ) e o Prêmio Canal Brasil de Curtas no Cine PE (PE).
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>ESTÊVÃO MENEGUZZO</h2>
+              <h3>Curador</h3>
+              <p>
+                
+                  <img src="static/convidados/f52406b2-add3-46b1-8dd3-b71e333830fe.jpg">
+                
+                Está a frente da Cajamanga Filmes. Com formação e estudos em filosofia, cinema, roteiro e trabalho de corpo criou a Cajamanga com o intuito de investir no setor, produzir e dirigir entretenimento. Como diretor seu último curta metragem, Valentina, ganhou o prêmio de melhor filme e direção no Festival do Ceará e teve estreia no Festival Internacional de Edinburgh. Valentina: https://vimeo.com/217379689
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>FILIPPO PITANGA</h2>
+              <h3>Curador</h3>
+              <p>
+                
+                  <img src="static/convidados/d096b049-beba-4197-8029-baf928e111b7.jpg">
+                
+                Advogado, jornalista, pós-graduando em cinema pela Estácio e mestrando pela ECO-UFRJ. Professor e membro da banca revisora de roteiros na Academia Internacional de Cinema e Sesc. Membro da Associação de Críticos de Cinema RJ – ACCRJ / FIPRESCI. Curador no CineFantasy – IFFF, do Festival Internacional Colaborativo de Audiovisual – FICA.VC e Fest Cine Pedra Azul. Curador dos Cineclubes AIC, Estação Net, Casa do Saber. Oficineiro do Cine Ceará. Colunista da Revista Fórum e Carta Capital. Membro do Podcast Cinema em Série. Editor-chefe do Almanaque Virtual. Mediador de debates do Festival de Vitória, Cine Jardim, Festival do Rio. Autor do livro "Lágrimas Entre Caixas" e de artigos em “O Último Durão - Centenário Kirk Douglas”, “John Carpenter: O Medo É Só O Começo” etc.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>GAUTIER LEE</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/fb7017fc-9bdd-490b-9af3-80f214026894.jpg">
+                
+                Roteirista, diretora e crítica de cinema. É membro do Black Femme Supremacy e da Organization of Black Screenwriters e membro-fundador do Coletivo Macumba Lab. Em 2019, foi semifinalista do FRAPA e vencedora do Prêmio Cabíria com o piloto da série Post Motherhood Sisters. Também participou do Laboratório de Narrativas Negras da FLUP. Em 2020, dirigiu seu segundo curta Um-Oito-Oito, escreveu o longa LOVE 101 e foi selecionada para os cursos Crafting Your Short Film e TV Writing: Crafting Your Pilot, ambos do Sundance Institute. Atualmente está desenvolvendo um curta documental, um longa de ficção e trabalha na sala de roteiro de uma série infantil de animação.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>IAN PERLUNGIERI</h2>
+              <h3>Curador</h3>
+              <p>
+                
+                  <img src="static/convidados/d2faf76f-e6f2-4299-8134-caadb6e7605d.jpg">
+                
+                Pós-graduado em Roteiro para Cinema e Televisão pela FAAP (2018). Roteiriza o curta-metragem "Ao som da chuva", que participa do 27º Festival Internacional de Curtas Metragens de São Paulo (2016). Autor do piloto de série "Super", finalista no FRAPA (2017) e do projeto "Vira-latas", contemplado em primeiro lugar pelo ProAC nº 29/2019 (Desenvolvimento de Séries). Em 2020, seu pré-projeto "Malu.com" é selecionado no edital Usina do Drama. É roteirista da 2º temporada da série animada infantil "Buzzu na Escola Intergaláctica" (veiculada na Nat Geo Kids, 2019).
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>LEONARDO BRUNO</h2>
+              <h3>Curador</h3>
+              <p>
+                
+                  <img src="static/convidados/8cdde3dc-1f08-4d02-b2e8-b1f1e69d9658.jpg">
+                
+                Jornalista, escritor e roteirista. Autor de 3 livros na área de música e cultura popular: “Zeca Pagodinho – Deixa o samba me levar”, “Explode, coração – Histórias do Salgueiro” e “Cartas para Noel – Histórias da Vila Isabel”. Atua há mais de 20 anos no mercado jornalístico carioca, com passagem pela Infoglobo nas funções de editor-chefe, gerente de negócios, repórter e colunista. Concluiu a Formação de Roteiristas da “Roteiraria” e a MasterClass de Aguinaldo Silva. Teve roteiros de ficção selecionados para os laboratórios do Festival de Cinema Francês Varilux e da Escola de Cinema Darcy Ribeiro. Atualmente, desenvolve roteiros para um documentário sobre Beth Carvalho e para duas séries de não-ficção do Canal Bis.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>LETÍCIA HELENA</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/1348d7c9-be6f-4b82-94a2-1a8639759daf.jpg">
+                
+                Leticia Helena é bacharel em Comunicação Social (UFF), com pós-graduação em roteiro audiovisual (Facha) e formação em roteiro na Escola de Séries. Vencedora do Prêmio de Melhor Pitchin pelo júri popular do Laboratório de Projeto de Séries do ROTA 2019, com o drama “Insano”; e do júri técnico do Laboratório de Longas-metragens do ROTA 2018, com a comédia “Pedro Américo”. Integrou a sala de roteiristas da segunda temporada da sitcom “República do Peru” (TV Brasil e Amazon). É co-roteirista dos telefilmes documentários “Nome do Pai” e “Moda sem medida”. Dirigiu, roteirizou e fez a pesquisa da websérie “Trajetórias”.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>LÍGIA ZAPOLLA</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/82ee7172-d2dc-4b8d-89e4-43afad09cfd4.jpg">
+                
+                Roteirista e realizadora audiovisual, é mestre em Estudos Cinematográficos e Audiovisuais na Universidade Sorbonne Nouvelle - Paris 3 e pós-graduada em Roteiros ficcionais no Senac. Roteirizou e dirigiu curtas-metragens exibidos em festivais internacionais. Em 2019 foi selecionada para o Laboratório de Desenvolvimento no 19ª Goiânia Mostra Curtas e ganhou como melhor pitching com a série Malua, também selecionada para o 3º CinePitching APACI/SPCINE com o longa-metragem Afundo. É colaboradora na Imprensa Mahon, canal focado no setor audiovisual, e fundadora da Arauara Audiovisual, produtora de conteúdo autoral.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>MAÍRA OLIVEIRA</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/c7c164c5-87b4-4a0a-a814-da871fb45410.jpg">
+                
+                Maíra Oliveira é escritora, dramaturga e roteirista com experiência no desenvolvimento de séries ficcionais nas produtoras A Fábrica, Migdal Filmes, AfroReggae e Panorâmica. Autora do livros "Mari, a sementinha" (Ed Nandyala, 2018), "Vértice: escritas negras" (Ed. Malê, 2019, "Favela em mim" (Ed Oriki) e "Narrativas Negras" (Ed.Voo). Assina a dramaturgia dos espetáculos teatrais "Yabá: Mulheres Negras" (Direção de Luiza Loroza e Rodrigo França) e "Duas Fridas" (Direção de Gizelly de Paula, Orientação de Ana Kfouri). Em 2019, dirigiu seu primeiro filme "Encruza", selecionado para o 12º Encontro de Cinema Negro Zózimo Bulbul – Brasil, África e Caribe, disponível no SPCinePlay. Atualmente é autora roteirista da Rede Globo, além de colaborar no desenvolvimento de longa-metragem para Amazon Prime.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>MANUELA FANTINATO</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/450d5668-bfd9-43d9-8870-9723b30b1238.jpg">
+                
+                Manu Fantinato é historiadora, tem mestrado em Letras e doutorado em História Social da Cultura, com períodos como pesquisadora visitante na Universidad Nacional de Rosário e na Brown University. É pesquisadora de pós-doutorado no Departamento de Filosofia da PUC-Rio e tem se dedicado ao estudo interdisciplinar de escritas e narrativas. É, ainda, editora no Memória Globo, área de projetos especiais sobre a história e a memória do Grupo Globo, atuando na pesquisa e produção de conteúdo multiplataforma sobre e para televisão.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>NICOLAS SANCHES</h2>
+              <h3>Curador</h3>
+              <p>
+                
+                  <img src="static/convidados/ba4d09e0-bd1e-4027-9bb0-5198441aabbd.jpg">
+                
+                Nícolas Sanches, é bacharel em Cinema e Audiovisual pela Universidade Federal Fluminense. Na UFF, estagiou no Laboratório de Investigação Audiovisual, onde ajudou a mapear filmes lançados na América Latina. Participou da produção e divulgação do Cineclube Sala Escura sobre cinema latino americano da UFF em parceria com o MAM. Trabalhou como continuísta na Casablanca Estúdios e na produtora Massiv. Entre outros projetos, roteirizou e dirigiu o filme de conclusão de curso “Tarja Preta” (pós-produção). Em 2020, participou do edital Pontos - MIS, do Museu de Imagem e do Som.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>RODRIGO ARAGÃO QUIRINO</h2>
+              <h3>Curador</h3>
+              <p>
+                
+                  <img src="static/convidados/9daab788-c029-4a71-b30c-9e39025ff5ee.jpg">
+                
+                Mestre em Comunicação (PPGC/UFPB), foi professor substituto nas cadeiras de Direção e Fotografia Cinematográfica do curso de Cinema e Audiovisual da UFPB. É professor no Centro Estadual de Artes (CEARTE-PB), onde ministra os cursos de Produção Audiovisual e Roteiro Cinematográfico. Realizou a oficina Cinema de Bolso em mais de 20 municípios paraibanos, e ensinou jovens e crianças a fazerem cinema a partir do celular. Como realizador, escreveu e dirigiu os curtas Cinemameu (ficção, 2011), Saudade (ficção, 2013), Cumadre Fulorzinha (documentário, 2014) e Voltando encontrei cães que fugiam de mim (ensaio, 2016). Atuou como roteirista das séries A Invasão (TV Brasil) e Intermares, e no longa-metragem Chofre, todos ainda em desenvolvimento.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>THAYS PANTUZA</h2>
+              <h3>Curadora</h3>
+              <p>
+                
+                  <img src="static/convidados/c2f649ee-18af-4862-8cbb-d6c7681096d1.jpg">
+                
+                Thays Pantuza, mestranda em Tecnologias de Comunicação e Cultura (PPGCOM/UERJ), bacharel em Cinema & Audiovisual (UFF). Atualmente desenvolve uma pesquisa sobre videogames e foi professora da disciplina "Narrativas Transmidiáticas" (estágio docente, UERJ). Trabalha nas produtoras Zumbido e Portal, além de ser redatora no site Garotas Nerds. Entre outros, roteirizou, dirigiu e montou os filmes "Cícero Doc." (webdoc, 2020), "Cérebro de Corda" (ficção, 2019) e "Sem Pai, Nem Mãe" (Edital Elipse, doc, 2019). Roteirizou ainda o game “Notas de Laboratório” (visual novel, 2020). Estagiou na TV Globo (RJ) e na TV Caravelas (Ipatinga - MG) como editora de vídeo. Já ministrou diversos workshops sobre roteiro (cinema e games), escrita criativa, produção audiovisual e game design. Baterista nas horas vagas, quase-gamer, às vezes bailarina, profissão artista.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>TOM FREITAS</h2>
+              <h3>Curador</h3>
+              <p>
+                
+                  <img src="static/convidados/739a6b29-cdce-46d5-be7a-a1b1c687798b.jpg">
+                
+                Tom Vitor de Freitas nasceu em São Paulo, Brasil, em 1993. É bacharel em Rádio, TV e Internet pela Faculdade Paulus de Tecnologia e Comunicação (São Paulo, Brasil) e mestrando em Cinema na Universidade da Beira Interior (Covilhã, Portugal). Desde o início de sua carreira acadêmica, interessou-se por estudar narrativas, sobretudo de filmes de terror. Atua como roteirista desde 2016, tendo participado de diversas produções, como a série televisiva “As Cidades Azuis” (TV Brasil, 2020), e as curtas-metragens “Astenia” (2018) e “Igor” (2020).
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>BEA GÓES</h2>
+              <h3>Jurada</h3>
+              <p>
+                
+                  <img src="static/convidados/a62ae31c-1f16-4c71-834a-788eeaf6bd50.jpg">
+                
+                É roteirista com 10 roteiros filmados. Iniciou seus estudos de Cinema, em 2015, em Los Angeles, na New York Film Academy, onde escreveu, dirigiu e editou três curtas-metragens. Em São Paulo, na Roteiraria, fez os cursos Formação de Roteirista Avançada e Oficina de Séries. Formada em Letras na FFLCH-USP e mestranda em Meios e Processos Audiovisuais na ECA-USP, Beatriz estuda o gênero melodramático e sua operação em serializados para streaming. É também criadora e apresentadora do Canal Narratologia, no YouTube, e escreveu o roteiro do curta-metragem Só Olhando, que acumula mais de 300 mil visualizações. Bea Também criou e escreveu a websérie de seis episódios Quarentenados, que só no piloto chegou a um milhão de visualizações em menos de 24 horas. Atualmente compõe uma sala de roteiro para uma série dramática.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>BRUNA AGUIAR</h2>
+              <h3>Jurada</h3>
+              <p>
+                
+                  <img src="static/convidados/7b3f9f1d-18cc-4b23-982f-21baf9d7bc37.jpg">
+                
+                Bruna Aguiar é bacharel em Rádio e TV, pela UFRJ, mestre em Mídias Criativas pela mesma universidade e pós-graduada em Roteiro para Cinema, TV, Web e Multiplataformas, pela UVA. Profissionalmente, Bruna trabalhou em diferentes setores do segmento audiovisual. Em 2018, trabalhou como roteirista na empresa Flocks, escrevendo para programas seriados de humor, para internet. Também atuou, na produtora MP2, participando da roteirização de dois longas e como assistente de produção executiva. Atualmente, trabalha como roteirista e produtora audiovisual, na YDUQS, holding que atua, na área de educação superior. Em 2019, desempenhou as funções de assistente de direção do III Rota – Festival de Roteiro Audiovisual e coordenadora de programação do festival Cabíria Festival – Mulheres & Audiovisual. Em 2020, terminou sua dissertação de mestrado que estuda experimenta a adaptação transmidiática de contos de Machado de Assis, da literatura, para o audiovisual.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="block">
+              <h2>MYRZA MUNIZ</h2>
+              <h3>Jurada</h3>
+              <p>
+                
+                  <img src="static/convidados/87297851-c0b6-4198-877f-a44c1e05a178.jpg">
+                
+                Myrza Muniz é mestre pela FGV/ESCP, roteirista pela Escola Darcy Ribeiro e Oficina de Autores da Rede Globo. Trabalhou em salas de roteiro em produtoras como Giros e Daza. Está na Conspiração desde 2019, onde assina o desenvolvimento de uma série ficcional em parceria com Paula Knudsen, e colabora como roteirista em outra série ficcional da produtora para a Amazon. Dirigiu, em 2020, o clipe da música "Racista e N1ke" (2020) que acumula mais de 1 milhão de visualizações no Youtube. Fundadora da Selvática Produções, membro da APAN, está no desenvolvimento, financiado pelo FSA, de seu primeiro longa-metragem: “A Odisséia de Obá”.
+              </p>
+            </div>
+          </li>
+          
+        </ul>
+      
+
+              
+        <h4 id="h4_regulamento" name="h4_regulamento">Regulamento</h4>
+        <div id="regulation">
+          <div>
+            <p><strong>1) OBJETIVO</strong></p>
+<p>&nbsp;</p>
+<p><strong>1.1</strong> O Concurso de Roteiros de Curtas-metragens do <strong>IV ROTA &ndash; Festival de Roteiro Audiovisual</strong> tem o objetivo de promover, valorizar, qualificar e premiar roteiros de curta&ndash;metragem de fic&ccedil;&atilde;o, escritos por <strong>estudantes e/ou iniciantes</strong> e, com isso, abrir portas para sua eventual realiza&ccedil;&atilde;o.</p>
+<p><strong>1.1.1</strong> Aceita-se a participa&ccedil;&atilde;o de <strong>estudantes</strong> e <strong>iniciantes</strong> desde que <strong>tenham no m&aacute;ximo 03 (tr&ecirc;s) roteiros de curtas-metragens</strong> filmados e exibidos em festival, mostra de cinema ou na web em plataformas de streaming,<strong> n&atilde;o podendo ter nenhum roteiro de longa ou s&eacute;rie</strong> j&aacute; exibido em festival, mostra de cinema ou na web em plataformas de streaming, o que dever&aacute; ser atestado atrav&eacute;s do <a title="Termo de Responsabilidade" href="../../..static/docs/TermoResponsabilidadeCONCURSO2020.pdf" target="_blank" rel="noopener">Termo de Responsabilidade</a> preenchido, assinado e anexado pelo concorrente no ato da inscri&ccedil;&atilde;o.&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>2) DATA E LOCAL</strong></p>
+<p>&nbsp;</p>
+<p><strong>2.1</strong> O <strong>IV ROTA &ndash; Festival de Roteiro Audiovisual</strong> acontecer&aacute; de 25 a 29 de novembro de 2020, no modo on line, em plataformas e nas redes sociais, dispon&iacute;vel na web. <strong>A Cerim&ocirc;nia de Premia&ccedil;&atilde;o ocorrer&aacute; no dia 29 de novembro de 2020</strong>.</p>
+<p>&nbsp;</p>
+<p><strong>3) INSCRI&Ccedil;&Otilde;ES</strong></p>
+<p>&nbsp;</p>
+<p><strong>3.1</strong> A inscri&ccedil;&atilde;o para o Concurso de Roteiros de Curtas-metragens do IV ROTA &eacute; gratuita e estar&aacute; aberta a partir das <span style="background-color: #ffffff;"><strong>00h00 de 27 de julho de 2020 at&eacute; as 23h59 de 21 de agosto de 2020, hor&aacute;rio de Bras&iacute;lia.</strong></span></p>
+<p><strong>3.2</strong> Estão habilitados a participar estudantes e iniciantes, maiores de 18 anos, brasileiros ou naturalizados, residentes dentro ou fora do Brasil, inscritos sob pseud&ocirc;nimo.</p>
+<p><strong>3.3</strong> S&oacute; ser&atilde;o aceitos roteiros escritos em portugu&ecirc;s, podendo haver apenas express&otilde;es em outras l&iacute;nguas.</p>
+<p><strong>3.4</strong> <strong>Cada concorrente poderá inscrever até 03 (três) roteiros</strong>, sendo cada roteiro correspondente a 01 (uma) inscri&ccedil;&atilde;o.</p>
+<p><strong>3.5</strong> A inscri&ccedil;&atilde;o dar-se-&aacute; atrav&eacute;s do seguinte processo:</p>
+<p><strong>3.5.1</strong> Ler o <a title="Termo de Responsabilidade" href="../../..static/docs/TermoResponsabilidadeCONCURSO2020.pdf">Termo de Responsabilidade</a> e, estando de acordo, preencher por inteiro, datar, assinar, imprimir, escanear, salvar no seu computador e anexar ao Formul&aacute;rio de Inscri&ccedil;&atilde;o do Concurso de Roteiros de Curtas-metragens do IV ROTA.</p>
+<p><strong>3.5.2</strong> Preencher o Formul&aacute;rio de Inscri&ccedil;&atilde;o do Concurso de Roteiros de Curtas-metragens do IV ROTA por completo. O n&atilde;o preenchimento dos campos obrigat&oacute;rios e a falta de documentos anexos n&atilde;o permitem a conclus&atilde;o da inscri&ccedil;&atilde;o.</p>
+<p><strong>3.5.3</strong> Anexar ao Formul&aacute;rio os seguintes documentos:</p>
+<p><strong>a) Termo de Responsabilidade</strong>, <a title="Termo de Responsabilidade" href="../../..static/docs/TermoResponsabilidadeCONCURSO2020.pdf">conforme modelo aqui</a>, com data e assinatura do candidato,</p>
+<p><strong>b) RG, carteira de motorista, passaporte, carteira de trabalho ou outro documento oficial de identidade com foto (frente e verso)</strong>, para a devida identifica&ccedil;&atilde;o e comprova&ccedil;&atilde;o da maioridade do candidato,</p>
+<p><strong>c) Carta de Autoriza&ccedil;&atilde;o do(s) coautor(es)</strong>, <a title="Autoriza&ccedil;&atilde;o Co-autor" href="../../..static/docs/Autoriza&ccedil;&atilde;oCoautorConcurso2020.pdf">conforme modelo aqui</a>, escaneada, com data e assinatura do(s) mesmo(s), caso se aplique;</p>
+<p><strong>d) Arquivo &uacute;nico da obra em PDF</strong>, contendo os seguintes itens:</p>
+<p>&nbsp; - a capa contendo apenas <strong>o t&iacute;tulo e o pseud&ocirc;nimo escolhido (n&atilde;o pode ser nome de nascimento, nem social, nem art&iacute;stico, devendo n&atilde;o ter refer&ecirc;ncia ao autor)</strong>,</p>
+<p>&nbsp; - o <strong>roteiro</strong> de at&eacute; <strong>20 (vinte)</strong> p&aacute;ginas fora a capa, seguindo formata&ccedil;&atilde;o profissional <strong>(Padr&atilde;o Master Scenes)</strong>,</p>
+<p>&nbsp; - a <strong>sinopse</strong> de at&eacute; <strong>01 (uma) p&aacute;gina</strong>,</p>
+<p>&nbsp; - o <strong>perfil dos personagens principais</strong> de at&eacute; <strong>01 (uma) p&aacute;gina</strong>,</p>
+<p><strong>O arquivo deve ter no m&aacute;ximo 23 p&aacute;ginas</strong>: a capa, o roteiro [com at&eacute; 20 (vinte) p&aacute;ginas], a sinopse e o perfil de personagens. Qualquer arquivo com mais de 23 p&aacute;ginas ser&aacute; automaticamente desclassificado.</p>
+<p>O arquivo n&atilde;o pode conter refer&ecirc;ncia ao nome e/ou contato do(s) autor(es), como por exemplo telefone, email, endere&ccedil;o, em nenhuma das p&aacute;ginas, cabe&ccedil;alhos ou rodap&eacute;s, para garantir o sigilo da autoria.</p>
+<p><strong>3.5.4</strong> N&atilde;o ser&aacute; aceita nenhuma documenta&ccedil;&atilde;o incompleta e/ou enviada ap&oacute;s o encerramento do prazo de inscri&ccedil;&otilde;es.</p>
+<p><strong>3.5.5</strong> O ROTA n&atilde;o se responsabiliza por qualquer situa&ccedil;&atilde;o decorrente da aus&ecirc;ncia de registro na Biblioteca Nacional, conforme consta no Termo de Responsabilidade do(s) autor(es).</p>
+<p><strong>3.5.6</strong>&nbsp; A organiza&ccedil;&atilde;o do IV ROTA &ndash; Festival de Roteiro Audiovisual tamb&eacute;m se reserva o direito de prorrogar o prazo de inscri&ccedil;&otilde;es, conforme julgue adequado, anunciando tal informa&ccedil;&atilde;o em seus canais de comunica&ccedil;&atilde;o.</p>
+<p><strong>3.5.7</strong> O IV ROTA &ndash; Festival de Roteiro de Audiovisual n&atilde;o se responsabiliza por quaisquer despesas referentes &agrave; participa&ccedil;&atilde;o de roteiristas neste Concurso.</p>
+<p><strong>3.5.8</strong> O IV ROTA &ndash; Festival de Roteiro Audiovisual n&atilde;o se responsabiliza pelas consequ&ecirc;ncias de quaisquer informa&ccedil;&otilde;es inver&iacute;dicas que venham a ser apresentadas por roteiristas participantes deste Concurso de Roteiros de Curtas-metragens do IV ROTA, reservando-se a prerrogativa de desclassificar, a qualquer momento, os respons&aacute;veis por quaisquer infra&ccedil;&otilde;es ao presente Regulamento.</p>
+<p><strong>3.5.9</strong> Ao inscrever seu(s) roteiro(s), o roteirista afirma anu&ecirc;ncia e concord&acirc;ncia com os termos constantes deste Regulamento, afirmando ainda que todas as informa&ccedil;&otilde;es fornecidas &agrave; organiza&ccedil;&atilde;o do IV ROTA &ndash; Festival de Roteiro Audiovisual por ocasi&atilde;o dessa inscri&ccedil;&atilde;o s&atilde;o verdadeiras.</p>
+<p>&nbsp;</p>
+<p><strong>4) PROCESSO SELETIVO</strong></p>
+<p>&nbsp;</p>
+<p><strong>4.1 Habilita&ccedil;&atilde;o:</strong> nesta etapa ser&atilde;o verificadas se todas as informa&ccedil;&otilde;es e documentos obrigat&oacute;rios foram enviados corretamente, bem como se os roteiros inscritos foram apresentados de acordo com a formata&ccedil;&atilde;o profissional (Padr&atilde;o Master Scenes &ndash; conforme indica&ccedil;&atilde;o aqui), no limite de p&aacute;ginas que consta na al&iacute;nea &ldquo;a&rdquo; do item 3.5.3. Se estiver habilitado, o inscrito receber&aacute; um e-mail confirmando a habilita&ccedil;&atilde;o no m&aacute;ximo em at&eacute; 7 dias ap&oacute;s o final do per&iacute;odo de inscri&ccedil;&otilde;es.</p>
+<p><strong>4.1.1</strong> Apenas os projetos habilitados passar&atilde;o para a etapa de sele&ccedil;&atilde;o e ser&atilde;o avaliados.</p>
+<p><strong>4.2 Sele&ccedil;&atilde;o:</strong> realizada em duas etapas, ter&aacute; na primeira delas uma Comiss&atilde;o de Curadores, que irá eleger em torno de 30 (trinta) roteiros semifinalistas. Na segunda etapa de sele&ccedil;&atilde;o, um J&uacute;ri eleger&aacute; 05 (cinco) roteiros finalistas e dentre eles os roteiros premiados em 03 (tr&ecirc;s) categorias.</p>
+<p><strong>4.2.1</strong> O J&uacute;ri e a Curadoria ser&atilde;o compostos por profissionais atuantes no mercado audiovisual e no meio acad&ecirc;mico, escolhidos pela organiza&ccedil;&atilde;o do IV ROTA &ndash; Festival de Roteiro Audiovisual.</p>
+<p><strong>4.3</strong> Os roteiros semifinalistas e os finalistas ser&atilde;o divulgados no site do ROTA, assim como nas p&aacute;ginas do ROTA nas redes sociais (Facebook, Instagram e Twitter), conforme cronograma abaixo:</p>
+<p><strong>4.3.1</strong><span style="background-color: #ffffff;"><strong> Dia 11 de outubro de 2020</strong> &ndash; divulga&ccedil;&atilde;o da lista dos semifinalistas,</span></p>
+<p><span style="background-color: #ffffff;"><strong>4.3.2</strong> <strong>Dia 15 de novembro de 2020</strong> &ndash; divulga&ccedil;&atilde;o da lista dos finalistas,</span></p>
+<p><strong>4.3.3</strong> <strong>Dia 29 de novembro de 2020</strong> &ndash; premia&ccedil;&atilde;o dos vencedores das 03 (tr&ecirc;s) categorias (melhor roteiro, melhor personagem e melhor di&aacute;logo), e da melhor protagonista feminina (Certificado Cab&iacute;ria), durante a Cerim&ocirc;nia de Encerramento.</p>
+<p><strong>4.3.4</strong> <strong>Dia 30 de novembro de 2020</strong> &ndash; divulga&ccedil;&atilde;o do resultado final no site do ROTA e nas redes sociais.</p>
+<p><strong>4.4</strong> A escolha dos roteiros vencedores do Concurso de Roteiros de Curtas-metragens do IV ROTA, bem como dos roteiros finalistas e semifinalistas, ser&aacute; de exclusiva responsabilidade da Curadoria e do J&uacute;ri do Concurso. Estas decis&otilde;es ser&atilde;o soberanas e irrecorr&iacute;veis.</p>
+<p><strong>4.5</strong> A organiza&ccedil;&atilde;o do IV ROTA &ndash; Festival de Roteiro Audiovisual reserva-se o direito de selecionar e premiar, ou n&atilde;o, quaisquer roteiros, conservando para si todas as prerrogativas referentes a esses processos de sele&ccedil;&atilde;o, inclusive a de n&atilde;o premiar ou selecionar os roteiros para quaisquer pr&ecirc;mios.</p>
+<p>&nbsp;</p>
+<p><strong>5) CRIT&Eacute;RIOS DE AVALIA&Ccedil;&Atilde;O</strong></p>
+<p>&nbsp;</p>
+<p><strong>5.1</strong> Crit&eacute;rios que ser&atilde;o utilizados na avalia&ccedil;&atilde;o dos roteiros:</p>
+<p><strong>a)</strong> Qualidade da estrutura narrativa;</p>
+<p><strong>b)</strong> Qualidade da trama;</p>
+<p><strong>c)</strong> Qualidade da constru&ccedil;&atilde;o de personagens;</p>
+<p><strong>d)</strong> Qualidade da constru&ccedil;&atilde;o dos di&aacute;logos;</p>
+<p><strong>e)</strong> Originalidade.</p>
+<p><strong>IMPORTANTE:</strong> qualquer roteiro que apresente conte&uacute;do com preconceito ou que incite &agrave; viol&ecirc;ncia estar&aacute; sujeito a imediata desclassifica&ccedil;&atilde;o.</p>
+<p><strong>5.2</strong> A Comiss&atilde;o da Curadoria ser&aacute; orientada a utilizar uma pontua&ccedil;&atilde;o de 0 a 2,5 para cada um dos crit&eacute;rios de avalia&ccedil;&atilde;o, estipulados neste Regulamento, com exce&ccedil;&atilde;o do item "d" Originalidade, que receber&aacute; 0 (zero) ou 2.</p>
+<p>&nbsp;</p>
+<p><strong>6) PREMIAÇÃO</strong></p>
+<p>&nbsp;</p>
+<p><strong>6.1</strong> Os roteiros finalistas concorrer&atilde;o a pr&ecirc;mios pelas 03 (tr&ecirc;s) categorias:</p>
+<p><strong>a) Melhor Roteiro:</strong> trof&eacute;u e parecer resumido do J&uacute;ri.</p>
+<p><strong>b) Melhor Di&aacute;logo:</strong> trof&eacute;u e parecer resumido do J&uacute;ri.</p>
+<p><strong>c) Melhor Personagem:</strong> trof&eacute;u e parecer resumido do J&uacute;ri.</p>
+<p><strong>6.2</strong> O <strong>Pr&ecirc;mio ROTA/Cab&iacute;ria</strong> oferece tamb&eacute;m o Certificado Cab&iacute;ria para o roteiro com <strong>a Melhor Protagonista Feminina em Curta-metragem</strong>.</p>
+<p><strong>6.3</strong> Outras premia&ccedil;&otilde;es paralelas poder&atilde;o ser criadas e ser&atilde;o divulgadas atrav&eacute;s do site e das p&aacute;ginas do ROTA no Facebook, Instagram e Twitter.</p>
+<p>&nbsp;</p>
+<p><strong>7) CONTRAPARTIDA</strong></p>
+<p>&nbsp;</p>
+<p><strong>7.1</strong> Como contrapartida é exigida a inclusão da logomarca do ROTA nos créditos de abertura e de encerramento do filme que venha a ser produzido a partir de um roteiro premiado, assim como a inserção da mesma logomarca nas edi&ccedil;ões impressas de roteiros premiados que venham a ser publicados, comercialmente ou não.</p>
+<p>&nbsp;</p>
+<p><strong>8) CONTATOS</strong></p>
+<p>&nbsp;</p>
+<p><strong>8.1</strong> D&uacute;vidas decorrentes do presente regulamento dever&atilde;o ser encaminhadas ao e-mail:&nbsp; <strong>rotaconcurso2020@gmail.com</strong></p>
+<p><strong>8.2</strong> Para acompanhar as not&iacute;cias do ROTA acesse:</p>
+<p>Facebook:&nbsp; <a href="https://www.facebook.com/rotafestival/">https://www.facebook.com/rotafestival/</a></p>
+<p>Site:&nbsp; <a href="http://rotafestival.com">http://rotafestival.com</a></p>
+<p>Instagram:&nbsp; <a href="https://www.instagram.com/rotafestival/">@rotafestival</a></p>
+<p>Twitter: <a href="https://twitter.com/rotafestival">@rotafestival</a></p>
+          </div>
+          <div class="showRegulation">
+            Ver mais...
+          </div>
+          <div class="hideRegulation">Fechar</div>
+        </div>
+        <div class="fade"></div>
+      
+
+      
+        <h4 id="h4_inscricao">Inscrição</h4>
+      
+
+      
+        <div style="font-size:18px;text-align:center">
+          
+            Inscrições abertas de 27 de julho a 21 de agosto de 2020!
+          
+        </div>
+
+      
+
+    </div>
+
+  </div>
+
+  <div>
+    <div class="box-payment" style="display: none;">
+      <strong>Regulamento</strong>
+      <div class="regulation clearP small">
+        <p><strong>1) OBJETIVO</strong></p>
+<p>&nbsp;</p>
+<p><strong>1.1</strong> O Concurso de Roteiros de Curtas-metragens do <strong>IV ROTA &ndash; Festival de Roteiro Audiovisual</strong> tem o objetivo de promover, valorizar, qualificar e premiar roteiros de curta&ndash;metragem de fic&ccedil;&atilde;o, escritos por <strong>estudantes e/ou iniciantes</strong> e, com isso, abrir portas para sua eventual realiza&ccedil;&atilde;o.</p>
+<p><strong>1.1.1</strong> Aceita-se a participa&ccedil;&atilde;o de <strong>estudantes</strong> e <strong>iniciantes</strong> desde que <strong>tenham no m&aacute;ximo 03 (tr&ecirc;s) roteiros de curtas-metragens</strong> filmados e exibidos em festival, mostra de cinema ou na web em plataformas de streaming,<strong> n&atilde;o podendo ter nenhum roteiro de longa ou s&eacute;rie</strong> j&aacute; exibido em festival, mostra de cinema ou na web em plataformas de streaming, o que dever&aacute; ser atestado atrav&eacute;s do <a title="Termo de Responsabilidade" href="../../..static/docs/TermoResponsabilidadeCONCURSO2020.pdf" target="_blank" rel="noopener">Termo de Responsabilidade</a> preenchido, assinado e anexado pelo concorrente no ato da inscri&ccedil;&atilde;o.&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>2) DATA E LOCAL</strong></p>
+<p>&nbsp;</p>
+<p><strong>2.1</strong> O <strong>IV ROTA &ndash; Festival de Roteiro Audiovisual</strong> acontecer&aacute; de 25 a 29 de novembro de 2020, no modo on line, em plataformas e nas redes sociais, dispon&iacute;vel na web. <strong>A Cerim&ocirc;nia de Premia&ccedil;&atilde;o ocorrer&aacute; no dia 29 de novembro de 2020</strong>.</p>
+<p>&nbsp;</p>
+<p><strong>3) INSCRI&Ccedil;&Otilde;ES</strong></p>
+<p>&nbsp;</p>
+<p><strong>3.1</strong> A inscri&ccedil;&atilde;o para o Concurso de Roteiros de Curtas-metragens do IV ROTA &eacute; gratuita e estar&aacute; aberta a partir das <span style="background-color: #ffffff;"><strong>00h00 de 27 de julho de 2020 at&eacute; as 23h59 de 21 de agosto de 2020, hor&aacute;rio de Bras&iacute;lia.</strong></span></p>
+<p><strong>3.2</strong> Estão habilitados a participar estudantes e iniciantes, maiores de 18 anos, brasileiros ou naturalizados, residentes dentro ou fora do Brasil, inscritos sob pseud&ocirc;nimo.</p>
+<p><strong>3.3</strong> S&oacute; ser&atilde;o aceitos roteiros escritos em portugu&ecirc;s, podendo haver apenas express&otilde;es em outras l&iacute;nguas.</p>
+<p><strong>3.4</strong> <strong>Cada concorrente poderá inscrever até 03 (três) roteiros</strong>, sendo cada roteiro correspondente a 01 (uma) inscri&ccedil;&atilde;o.</p>
+<p><strong>3.5</strong> A inscri&ccedil;&atilde;o dar-se-&aacute; atrav&eacute;s do seguinte processo:</p>
+<p><strong>3.5.1</strong> Ler o <a title="Termo de Responsabilidade" href="../../..static/docs/TermoResponsabilidadeCONCURSO2020.pdf">Termo de Responsabilidade</a> e, estando de acordo, preencher por inteiro, datar, assinar, imprimir, escanear, salvar no seu computador e anexar ao Formul&aacute;rio de Inscri&ccedil;&atilde;o do Concurso de Roteiros de Curtas-metragens do IV ROTA.</p>
+<p><strong>3.5.2</strong> Preencher o Formul&aacute;rio de Inscri&ccedil;&atilde;o do Concurso de Roteiros de Curtas-metragens do IV ROTA por completo. O n&atilde;o preenchimento dos campos obrigat&oacute;rios e a falta de documentos anexos n&atilde;o permitem a conclus&atilde;o da inscri&ccedil;&atilde;o.</p>
+<p><strong>3.5.3</strong> Anexar ao Formul&aacute;rio os seguintes documentos:</p>
+<p><strong>a) Termo de Responsabilidade</strong>, <a title="Termo de Responsabilidade" href="../../..static/docs/TermoResponsabilidadeCONCURSO2020.pdf">conforme modelo aqui</a>, com data e assinatura do candidato,</p>
+<p><strong>b) RG, carteira de motorista, passaporte, carteira de trabalho ou outro documento oficial de identidade com foto (frente e verso)</strong>, para a devida identifica&ccedil;&atilde;o e comprova&ccedil;&atilde;o da maioridade do candidato,</p>
+<p><strong>c) Carta de Autoriza&ccedil;&atilde;o do(s) coautor(es)</strong>, <a title="Autoriza&ccedil;&atilde;o Co-autor" href="../../..static/docs/Autoriza&ccedil;&atilde;oCoautorConcurso2020.pdf">conforme modelo aqui</a>, escaneada, com data e assinatura do(s) mesmo(s), caso se aplique;</p>
+<p><strong>d) Arquivo &uacute;nico da obra em PDF</strong>, contendo os seguintes itens:</p>
+<p>&nbsp; - a capa contendo apenas <strong>o t&iacute;tulo e o pseud&ocirc;nimo escolhido (n&atilde;o pode ser nome de nascimento, nem social, nem art&iacute;stico, devendo n&atilde;o ter refer&ecirc;ncia ao autor)</strong>,</p>
+<p>&nbsp; - o <strong>roteiro</strong> de at&eacute; <strong>20 (vinte)</strong> p&aacute;ginas fora a capa, seguindo formata&ccedil;&atilde;o profissional <strong>(Padr&atilde;o Master Scenes)</strong>,</p>
+<p>&nbsp; - a <strong>sinopse</strong> de at&eacute; <strong>01 (uma) p&aacute;gina</strong>,</p>
+<p>&nbsp; - o <strong>perfil dos personagens principais</strong> de at&eacute; <strong>01 (uma) p&aacute;gina</strong>,</p>
+<p><strong>O arquivo deve ter no m&aacute;ximo 23 p&aacute;ginas</strong>: a capa, o roteiro [com at&eacute; 20 (vinte) p&aacute;ginas], a sinopse e o perfil de personagens. Qualquer arquivo com mais de 23 p&aacute;ginas ser&aacute; automaticamente desclassificado.</p>
+<p>O arquivo n&atilde;o pode conter refer&ecirc;ncia ao nome e/ou contato do(s) autor(es), como por exemplo telefone, email, endere&ccedil;o, em nenhuma das p&aacute;ginas, cabe&ccedil;alhos ou rodap&eacute;s, para garantir o sigilo da autoria.</p>
+<p><strong>3.5.4</strong> N&atilde;o ser&aacute; aceita nenhuma documenta&ccedil;&atilde;o incompleta e/ou enviada ap&oacute;s o encerramento do prazo de inscri&ccedil;&otilde;es.</p>
+<p><strong>3.5.5</strong> O ROTA n&atilde;o se responsabiliza por qualquer situa&ccedil;&atilde;o decorrente da aus&ecirc;ncia de registro na Biblioteca Nacional, conforme consta no Termo de Responsabilidade do(s) autor(es).</p>
+<p><strong>3.5.6</strong>&nbsp; A organiza&ccedil;&atilde;o do IV ROTA &ndash; Festival de Roteiro Audiovisual tamb&eacute;m se reserva o direito de prorrogar o prazo de inscri&ccedil;&otilde;es, conforme julgue adequado, anunciando tal informa&ccedil;&atilde;o em seus canais de comunica&ccedil;&atilde;o.</p>
+<p><strong>3.5.7</strong> O IV ROTA &ndash; Festival de Roteiro de Audiovisual n&atilde;o se responsabiliza por quaisquer despesas referentes &agrave; participa&ccedil;&atilde;o de roteiristas neste Concurso.</p>
+<p><strong>3.5.8</strong> O IV ROTA &ndash; Festival de Roteiro Audiovisual n&atilde;o se responsabiliza pelas consequ&ecirc;ncias de quaisquer informa&ccedil;&otilde;es inver&iacute;dicas que venham a ser apresentadas por roteiristas participantes deste Concurso de Roteiros de Curtas-metragens do IV ROTA, reservando-se a prerrogativa de desclassificar, a qualquer momento, os respons&aacute;veis por quaisquer infra&ccedil;&otilde;es ao presente Regulamento.</p>
+<p><strong>3.5.9</strong> Ao inscrever seu(s) roteiro(s), o roteirista afirma anu&ecirc;ncia e concord&acirc;ncia com os termos constantes deste Regulamento, afirmando ainda que todas as informa&ccedil;&otilde;es fornecidas &agrave; organiza&ccedil;&atilde;o do IV ROTA &ndash; Festival de Roteiro Audiovisual por ocasi&atilde;o dessa inscri&ccedil;&atilde;o s&atilde;o verdadeiras.</p>
+<p>&nbsp;</p>
+<p><strong>4) PROCESSO SELETIVO</strong></p>
+<p>&nbsp;</p>
+<p><strong>4.1 Habilita&ccedil;&atilde;o:</strong> nesta etapa ser&atilde;o verificadas se todas as informa&ccedil;&otilde;es e documentos obrigat&oacute;rios foram enviados corretamente, bem como se os roteiros inscritos foram apresentados de acordo com a formata&ccedil;&atilde;o profissional (Padr&atilde;o Master Scenes &ndash; conforme indica&ccedil;&atilde;o aqui), no limite de p&aacute;ginas que consta na al&iacute;nea &ldquo;a&rdquo; do item 3.5.3. Se estiver habilitado, o inscrito receber&aacute; um e-mail confirmando a habilita&ccedil;&atilde;o no m&aacute;ximo em at&eacute; 7 dias ap&oacute;s o final do per&iacute;odo de inscri&ccedil;&otilde;es.</p>
+<p><strong>4.1.1</strong> Apenas os projetos habilitados passar&atilde;o para a etapa de sele&ccedil;&atilde;o e ser&atilde;o avaliados.</p>
+<p><strong>4.2 Sele&ccedil;&atilde;o:</strong> realizada em duas etapas, ter&aacute; na primeira delas uma Comiss&atilde;o de Curadores, que irá eleger em torno de 30 (trinta) roteiros semifinalistas. Na segunda etapa de sele&ccedil;&atilde;o, um J&uacute;ri eleger&aacute; 05 (cinco) roteiros finalistas e dentre eles os roteiros premiados em 03 (tr&ecirc;s) categorias.</p>
+<p><strong>4.2.1</strong> O J&uacute;ri e a Curadoria ser&atilde;o compostos por profissionais atuantes no mercado audiovisual e no meio acad&ecirc;mico, escolhidos pela organiza&ccedil;&atilde;o do IV ROTA &ndash; Festival de Roteiro Audiovisual.</p>
+<p><strong>4.3</strong> Os roteiros semifinalistas e os finalistas ser&atilde;o divulgados no site do ROTA, assim como nas p&aacute;ginas do ROTA nas redes sociais (Facebook, Instagram e Twitter), conforme cronograma abaixo:</p>
+<p><strong>4.3.1</strong><span style="background-color: #ffffff;"><strong> Dia 11 de outubro de 2020</strong> &ndash; divulga&ccedil;&atilde;o da lista dos semifinalistas,</span></p>
+<p><span style="background-color: #ffffff;"><strong>4.3.2</strong> <strong>Dia 15 de novembro de 2020</strong> &ndash; divulga&ccedil;&atilde;o da lista dos finalistas,</span></p>
+<p><strong>4.3.3</strong> <strong>Dia 29 de novembro de 2020</strong> &ndash; premia&ccedil;&atilde;o dos vencedores das 03 (tr&ecirc;s) categorias (melhor roteiro, melhor personagem e melhor di&aacute;logo), e da melhor protagonista feminina (Certificado Cab&iacute;ria), durante a Cerim&ocirc;nia de Encerramento.</p>
+<p><strong>4.3.4</strong> <strong>Dia 30 de novembro de 2020</strong> &ndash; divulga&ccedil;&atilde;o do resultado final no site do ROTA e nas redes sociais.</p>
+<p><strong>4.4</strong> A escolha dos roteiros vencedores do Concurso de Roteiros de Curtas-metragens do IV ROTA, bem como dos roteiros finalistas e semifinalistas, ser&aacute; de exclusiva responsabilidade da Curadoria e do J&uacute;ri do Concurso. Estas decis&otilde;es ser&atilde;o soberanas e irrecorr&iacute;veis.</p>
+<p><strong>4.5</strong> A organiza&ccedil;&atilde;o do IV ROTA &ndash; Festival de Roteiro Audiovisual reserva-se o direito de selecionar e premiar, ou n&atilde;o, quaisquer roteiros, conservando para si todas as prerrogativas referentes a esses processos de sele&ccedil;&atilde;o, inclusive a de n&atilde;o premiar ou selecionar os roteiros para quaisquer pr&ecirc;mios.</p>
+<p>&nbsp;</p>
+<p><strong>5) CRIT&Eacute;RIOS DE AVALIA&Ccedil;&Atilde;O</strong></p>
+<p>&nbsp;</p>
+<p><strong>5.1</strong> Crit&eacute;rios que ser&atilde;o utilizados na avalia&ccedil;&atilde;o dos roteiros:</p>
+<p><strong>a)</strong> Qualidade da estrutura narrativa;</p>
+<p><strong>b)</strong> Qualidade da trama;</p>
+<p><strong>c)</strong> Qualidade da constru&ccedil;&atilde;o de personagens;</p>
+<p><strong>d)</strong> Qualidade da constru&ccedil;&atilde;o dos di&aacute;logos;</p>
+<p><strong>e)</strong> Originalidade.</p>
+<p><strong>IMPORTANTE:</strong> qualquer roteiro que apresente conte&uacute;do com preconceito ou que incite &agrave; viol&ecirc;ncia estar&aacute; sujeito a imediata desclassifica&ccedil;&atilde;o.</p>
+<p><strong>5.2</strong> A Comiss&atilde;o da Curadoria ser&aacute; orientada a utilizar uma pontua&ccedil;&atilde;o de 0 a 2,5 para cada um dos crit&eacute;rios de avalia&ccedil;&atilde;o, estipulados neste Regulamento, com exce&ccedil;&atilde;o do item "d" Originalidade, que receber&aacute; 0 (zero) ou 2.</p>
+<p>&nbsp;</p>
+<p><strong>6) PREMIAÇÃO</strong></p>
+<p>&nbsp;</p>
+<p><strong>6.1</strong> Os roteiros finalistas concorrer&atilde;o a pr&ecirc;mios pelas 03 (tr&ecirc;s) categorias:</p>
+<p><strong>a) Melhor Roteiro:</strong> trof&eacute;u e parecer resumido do J&uacute;ri.</p>
+<p><strong>b) Melhor Di&aacute;logo:</strong> trof&eacute;u e parecer resumido do J&uacute;ri.</p>
+<p><strong>c) Melhor Personagem:</strong> trof&eacute;u e parecer resumido do J&uacute;ri.</p>
+<p><strong>6.2</strong> O <strong>Pr&ecirc;mio ROTA/Cab&iacute;ria</strong> oferece tamb&eacute;m o Certificado Cab&iacute;ria para o roteiro com <strong>a Melhor Protagonista Feminina em Curta-metragem</strong>.</p>
+<p><strong>6.3</strong> Outras premia&ccedil;&otilde;es paralelas poder&atilde;o ser criadas e ser&atilde;o divulgadas atrav&eacute;s do site e das p&aacute;ginas do ROTA no Facebook, Instagram e Twitter.</p>
+<p>&nbsp;</p>
+<p><strong>7) CONTRAPARTIDA</strong></p>
+<p>&nbsp;</p>
+<p><strong>7.1</strong> Como contrapartida é exigida a inclusão da logomarca do ROTA nos créditos de abertura e de encerramento do filme que venha a ser produzido a partir de um roteiro premiado, assim como a inserção da mesma logomarca nas edi&ccedil;ões impressas de roteiros premiados que venham a ser publicados, comercialmente ou não.</p>
+<p>&nbsp;</p>
+<p><strong>8) CONTATOS</strong></p>
+<p>&nbsp;</p>
+<p><strong>8.1</strong> D&uacute;vidas decorrentes do presente regulamento dever&atilde;o ser encaminhadas ao e-mail:&nbsp; <strong>rotaconcurso2020@gmail.com</strong></p>
+<p><strong>8.2</strong> Para acompanhar as not&iacute;cias do ROTA acesse:</p>
+<p>Facebook:&nbsp; <a href="https://www.facebook.com/rotafestival/">https://www.facebook.com/rotafestival/</a></p>
+<p>Site:&nbsp; <a href="http://rotafestival.com">http://rotafestival.com</a></p>
+<p>Instagram:&nbsp; <a href="https://www.instagram.com/rotafestival/">@rotafestival</a></p>
+<p>Twitter: <a href="https://twitter.com/rotafestival">@rotafestival</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  window.formSent = false;
+  $(document).ready(function(){
+    
+    
+
+    $('#subscription_form').submit(function(){
+      if (!window.formSent){
+        let submit = $(this).find('input[type=submit]');
+        submit[0].disabled = true;
+        window.formSent = true;
+        submit.attr('class', 'btn grey');
+        submit.val('Aguarde, enviando...');
+      }
+    });
+
+    $('.regulation > a').click(function(){
+      if ($(this).hasClass('visible')){
+        $(this).removeClass('visible');
+        $(this).text('ver regulamento');
+        $('.regulation .text').hide();
+      } else {
+        $(this).addClass('visible');
+        $(this).text('esconder regulamento');
+        $('.regulation .text').show();
+      }
+    });
+
+    $(".showRegulation").click( function () {
+      $(".hideRegulation").show();
+      $(this).hide().parent().css({
+        height: "auto"
+      });
+    });
+
+    $(".hideRegulation").click( function () {
+      $(".showRegulation").show();
+      $(this).hide().parent().css({
+        height: "390px"
+      });
+    });
+
+    $('.charCounter').each(function(n, el){
+      let input = $(el).find('.input > *');
+      let maxLength = input.attr('maxlength');
+      let label = $('<span class="counter">');
+      label.appendTo($(el));
+      input.keyup(function(){
+        let n = $(this).val().length;
+        label.text((maxLength - n) + ' caracteres restantes');
+      });
+      input.keydown(function(){
+        $(this).keyup();
+      });
+      input.keyup();
+    });
+  });
+
+</script>
+
+        </div>
+      </div>
+
+      <footer>
+        <div class="content">
+          © 2020 ROTA | Festival de Roteiro Audiovisual - Todos os direitos reservados
+        </div>
+      </footer>
+
+    </main>
+
+    <script>
+      window.mobileMenuOpen = false;
+
+      $(document).ready(function(){
+        window.menuFixed = false;
+
+        $(window).scroll(function(){
+          if (window.scrollY > 85){
+            if (!window.menuFixed){
+              if (!window.mobileMenuOpen){
+                $('nav').addClass('fixed');
+                $('header').addClass('margin-bottom');
+                window.menuFixed = true;
+              }
+            }
+          } else {
+            if (window.menuFixed){
+              $('nav').removeClass('fixed');
+              $('header').removeClass('margin-bottom');
+              window.menuFixed = false;
+            }
+          }
+        });
+
+        $('#mobile-menu').click(function(){
+          if (!window.mobileMenuOpen){
+            $('nav').css({'left': '0%'});
+            $('nav').removeClass('fixed');
+            $('header').removeClass('margin-bottom');
+          } else {
+            $('nav').css({'left': '100%'});
+          }
+          window.mobileMenuOpen = !window.mobileMenuOpen;
+        });
+      });
+
+      window.scroll();
+
+      $(document).ready(function(){
+        $('.ajaxForm').submit(function(ev){
+          ev.preventDefault();
+          let btn = $(this).find('button[type=submit]');
+          let originalText = btn.text();
+          btn.text('Aguarde, enviando...');
+          btn.addClass('grey').removeClass('action').attr('disabled', true);
+          $(this).find('.errorlist.ajaxForm').remove();
+
+          $.getJSON({
+            url: $(this).attr('action'),
+            method: $(this).attr('method'),
+            data: $(this).serialize(),
+            success: function(r){
+              btn.removeClass('grey').addClass('action').attr('disabled', false);
+              btn.text(originalText);
+
+              if (r.error){
+                let _err = '<ul class="errorlist ajaxForm"><li class="t">ERRO';
+                _err += '</li><li class="r"></li></ul>';
+                let err = $(_err);
+                err.find('.r').text(r.error);
+                btn.before(err);
+              } else {
+                $(this)[0].onSuccess(r);
+              }
+            }.bind(this)
+          });
+        });
+      });
+
+    </script>
+
+
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173626616-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173626616-1');
+      </script>
+    
+
+  </body>
+</html>

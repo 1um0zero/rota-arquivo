@@ -1,0 +1,99 @@
+
+.btn_arquivo{
+    float:right;    
+    background:#fac20b;
+    color:#000;
+    border:none;
+    padding:33px 20px;
+    text-decoration:none;
+    cursor:pointer;
+    box-sizing:border-box;
+    font-size:14px;
+    font-family:"Open Sans";
+    line-height:100%;
+    height: 85px;        
+}
+
+.menu_contest {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.item_menu_contest {
+    font-size:20px;
+    font-weight:400;
+    font-family:"Lato";
+    text-transform:uppercase;
+    text-align:center;    
+    position:relative;
+    display:inline;
+    color:#0190d0;
+    text-decoration-line: underline;    
+    padding: 30px;    
+}
+
+.item_menu_contest a {
+    color:#0190d0;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */    
+  }
+
+/* Modal Content */
+.modal-content {    
+    background-color: #fefefe;
+    margin: auto;    
+    border: 1px solid #888;
+    width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+    .modal-content {    
+        background-color: #fefefe;
+        margin: auto;    
+        border: 1px solid #888;
+        width: 90%;
+    }
+}
+
+.modal-title {    
+    text-align: center;
+    background-color: #fbc210;
+    margin: auto;
+    padding: 20px;
+}
+
+.modal-body {
+    text-align: center;    
+    margin: auto;
+    padding: 20px;    
+}
+
+/* The Close Button */
+.close {
+    color: #353535;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
